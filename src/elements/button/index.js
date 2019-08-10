@@ -1,5 +1,4 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 
 /**
  * A Button indicates a possible user action.
@@ -20,6 +19,7 @@ export default function Button({ ...props }) {
     loading,
     disabled,
     href,
+    target,
     role,
   } = props
 
@@ -29,9 +29,10 @@ export default function Button({ ...props }) {
   const isFluid = (fluid) ? 'fluid' : ''
   const isInverted = (inverted) ? 'inverted' : ''
   const isLoading = (loading) ? 'loading' : ''
+  const isAriaLoading = (loading) ? {'aria-label': 'Loading'} : ''
   const isDisabled = (disabled) ? 'disabled' : ''
   const hasHref = (href) ? {href: href} : ''
-  console.log('hasHref', hasHref);
+  const hasTarget = (target) ? {target: target} : ''
 
   const contents = () => {
     if (loading) {
@@ -60,6 +61,8 @@ export default function Button({ ...props }) {
   return (
      <ElementType
        { ...hasHref }
+       { ...hasTarget }
+       { ...isAriaLoading }
        disabled={props.disabled}
        className={`button ${color} ${isPrimary} ${isSecondary} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
        onClick={props.onClick}
@@ -69,17 +72,3 @@ export default function Button({ ...props }) {
      </ElementType>
   )
 }
-
-// Button.propTypes = {
-//   type: PropTypes.oneOf(['button', 'a', 'div']),
-//   text: PropTypes.string,
-//   icon: PropTypes.string,
-//   color: PropTypes.string,
-//   fluid: PropTypes.bool,
-//   onClick: PropTypes.func,
-//   size: PropTypes.oneOf(['small', 'medium', 'large']),
-//   inverted: PropTypes.bool,
-//   loading: PropTypes.bool,
-//   disabled: PropTypes.bool,
-//   role: PropTypes.string
-// }
