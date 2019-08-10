@@ -1,3 +1,179 @@
-.rpl-button {
-  color: red;
+.button {
+  transition: all .3s ease-in-out;
+  background: transparent;
+  box-shadow: none;
+  outline: 0;
+  color: palette(black);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  @extend .ph3;
+}
+
+.button.primary {
+  border: 2px solid palette(black);
+  text-align: center;
+  display: inline;
+  border-radius: 3px;
+
+  &.small {
+    line-height: 35px;
+    height: 35px;
+    min-width: 0px;
+    @extend .f6;
+  }
+
+  &.medium {
+    line-height: 45px;
+    height: 45px;
+    min-width: 100px;
+    @extend .f5;
+  }
+
+  &.large {
+    line-height: 55px;
+    height: 55px;
+    min-width: 200px;
+    @extend .f4;
+  }
+
+  &.x-large {
+    line-height: 70px;
+    height: 70px;
+    min-width: 200px;
+    @extend .f3;
+  }
+}
+
+.button.secondary {
+  border: 0;
+  max-width: 100%;
+  min-width: 0;
+  text-align: left;
+  display: inline;
+  border-radius: 0px;
+  @extend .ph0;
+
+  .button__arrow {
+    transition: all .3s ease-in-out;
+    margin-left: 7px;
+  }
+
+  &.small {
+    @extend .f6;
+
+    .button__arrow {
+      width: 14px;
+    }
+  }
+
+  &.medium {
+    @extend .f5;
+
+    .button__arrow {
+      width: 16px;
+    }
+  }
+
+  &.large {
+    @extend .f4;
+
+    .button__arrow {
+      width: 18px;
+    }
+  }
+
+  &.x-large {
+    @extend .f3;
+
+    .button__arrow {
+      width: 20px;
+    }
+  }
+
+  &:hover:not(.loading):not(.disabled) {
+    .button__arrow {
+      transform: translateX(5px);
+    }
+    &:after {
+      width: calc(100% - 20px);
+    }
+  }
+
+  &:after {
+    content: '';
+    transition: all .3s ease-in-out;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: palette(black);
+  }
+}
+
+.button.fluid {
+  width: 100%;
+}
+
+.button.inverted {
+  //
+}
+
+.button.loading {
+  cursor: default;
+
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .button__spinner {
+    animation: loading 2s linear infinite;
+  }
+
+  &.primary {
+    @extend .flex;
+    @extend .justify-center;
+  }
+
+  &.secondary {
+    @extend .flex;
+    @extend .justify-start;
+  }
+}
+
+.button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@each $color, $hex in $colors {
+  .button.primary.#{$color} {
+    background-color: $hex;
+    color: palette(white);
+    fill: palette(white);
+
+    &:hover:not(.loading):not(.disabled) {
+      background-color: palette(white);
+      color: $hex;
+      fill: $hex;
+    }
+  }
+
+  .button.primary.#{$color}.inverted {
+    background-color: palette(white);
+    color: $hex;
+    fill: $hex;
+
+    &:hover:not(.loading):not(.disabled) {
+      background-color: $hex;
+      color: palette(white);
+      fill: palette(white);
+    }
+  }
 }
