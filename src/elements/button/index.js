@@ -1,5 +1,5 @@
 import React from 'react'
-import {IconLoader} from '../icon';
+import Icon from '../icon';
 
 /**
  * A Button indicates a possible user action.
@@ -49,7 +49,7 @@ export default function Button({ ...props }) {
         return (
           <div className="flex  align-center">
             <div className="button__icon  button__icon--left">
-              <IconLoader icon={icon} />
+              <Icon icon={icon} />
             </div>
             <span>{text}</span>
           </div>
@@ -59,7 +59,7 @@ export default function Button({ ...props }) {
           <div className="flex  align-center">
             <span>{text}</span>
             <div className="button__icon  button__icon--right">
-              <IconLoader icon={icon} />
+              <Icon icon={icon} />
             </div>
           </div>
         )

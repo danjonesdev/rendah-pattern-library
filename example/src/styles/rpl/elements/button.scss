@@ -93,7 +93,7 @@
   max-width: 100%;
   min-width: 0;
   text-align: left;
-  display: inline;
+  display: inline-block;
   border-radius: 0px;
   @extend .ph0;
 
@@ -101,7 +101,7 @@
     .button__icon--right, .button__icon--left + span {
       transform: translateX(5px);
     }
-    
+
     &:after {
       width: calc(100% - 20px);
     }

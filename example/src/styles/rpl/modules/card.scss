@@ -3,8 +3,14 @@
 }
 
 .card__image {
+  height: 200px;
   width: 100%;
+  object-fit: cover;
   @extend .mb2;
+}
+
+.card__image--inline {
+  height: 80px;
 }
 
 .card__title {
@@ -20,7 +26,7 @@
 .card__price {
   @extend .f6;
   @extend .mb2;
-  @extend .dib;
+  @extend .db;
 }
 
 .card__price--has-discount {

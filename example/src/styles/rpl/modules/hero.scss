@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero.small {
+  height: 250px;
+}
+
+.hero.medium {
+  height: 350px;
+}
+
+.hero.large {
+  height: 450px;
+}
+
+.hero__dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  @extend .pa4;
+}
+
+.hero__title {
+  @extend .f2;
+@extend .mb3;
+}
+
+.hero__description {
+  @extend .f5;
+  @extend .mb3;
+
+}
+
+.hero__button {
+//
+}
