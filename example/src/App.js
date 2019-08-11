@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-import { Card } from "rendah-pattern-library";
-
+import CardPreview from './pattern-library/modules/card';
 import ButtonPreview from './pattern-library/elements/button';
 
 export default class App extends Component {
@@ -14,7 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Card image={null} title={null} description={null} link={null} />
+        <CardPreview />
         <ButtonPreview />
       </div>
     );

@@ -1,346 +1,376 @@
-import React, { Component } from "react";
+import React from 'react'
 import { Button } from "rendah-pattern-library";
 
-export default class ButtonPreview extends Component {
-  constructor(props){
-    super();
-    this.state = {
-    }
-  }
+import PreviewWrapper from '../../../components/preview-wrapper';
 
-  render() {
-    return (
-      <div>
-        <div className="container  mla  mra">
-          <div className={'flex  flex-wrap  justify-center'}>
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Primary"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+export default function ButtonPreview({ ...props }) {
+  return (
+    <React.Fragment>
+      <PreviewWrapper
+        title={'Button'}
+        description={'These are the button variations'}
+      />
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Inverted"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={true}
-                loading={false}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+      <div className="container  mla  mra">
+        <div className={'flex  flex-wrap  justify-center'}>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Primary"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Loading"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={false}
-                loading={true}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={false}
+              loading={false}
+              disabled={false}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Disabled"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={true}
-                loading={false}
-                disabled={true}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+              href={null}
+              target={null}
+              role={'button'}
+            />
           </div>
 
-          <div className={'flex  flex-wrap  justify-center'}>
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Primary Small"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'small'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Inverted"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Primary Medium"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={true}
+              loading={false}
+              disabled={false}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Primary Large"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'large'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
-
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"button"}
-                text={"Primary X-Large"}
-                icon={"facebook"}
-                color={"black"}
-                primary={true}
-                secondary={false}
-                fluid={false}
-                onClick={null}
-                size={'x-large'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={null}
-                target={null}
-                role={'button'}
-              />
-            </div>
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
           </div>
 
-          <div className={'flex  flex-wrap  justify-between'}>
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Secondary"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Loading"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Inverted"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={true}
-                loading={false}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={false}
+              loading={true}
+              disabled={false}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Loading"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={false}
-                loading={true}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
-
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Disabled"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={true}
-                loading={false}
-                disabled={true}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
           </div>
 
-          <div className={'flex  flex-wrap  justify-between'}>
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Secondary Small"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'small'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Disabled"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Secondary Medium"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'medium'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={true}
+              loading={false}
+              disabled={true}
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Secondary Large"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'large'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
+          </div>
+        </div>
 
-            <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
-              <Button
-                type={"a"}
-                text={"Secondary X-Large"}
-                icon={"facebook"}
-                color={"black"}
-                primary={false}
-                secondary={true}
-                fluid={false}
-                onClick={null}
-                size={'x-large'}
-                inverted={false}
-                loading={false}
-                disabled={false}
-                href={'/'}
-                target={'_blank'}
-                role={'button'}
-              />
-            </div>
+        <div className={'flex  flex-wrap  justify-center'}>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Primary Small"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
+
+              fluid={false}
+              onClick={null}
+              size={'small'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Primary Medium"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
+
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Primary Large"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
+
+              fluid={false}
+              onClick={null}
+              size={'large'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"button"}
+              text={"Primary X-Large"}
+              icon={null}
+              color={"black"}
+              type={'primary'}
+
+              fluid={false}
+              onClick={null}
+              size={'x-large'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={null}
+              target={null}
+              role={'button'}
+            />
+          </div>
+        </div>
+
+        <div className={'flex  flex-wrap  justify-between'}>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Secondary"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Inverted"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={true}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Loading"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={false}
+              loading={true}
+              disabled={false}
+
+              iconFloat={null}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Disabled"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={true}
+              loading={false}
+              disabled={true}
+
+              iconFloat={null}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+        </div>
+
+        <div className={'flex  flex-wrap  justify-between'}>
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Secondary Small"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'small'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={null}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Secondary Medium"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'medium'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={'left'}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Secondary Large"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'large'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={'right'}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
+          </div>
+
+          <div className={'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'}>
+            <Button
+              htmlEntity={"a"}
+              text={"Secondary X-Large"}
+              icon={"arrow-right"}
+              color={"black"}
+              type={'secondary'}
+
+              fluid={false}
+              onClick={null}
+              size={'x-large'}
+              inverted={false}
+              loading={false}
+              disabled={false}
+
+              iconFloat={"left"}
+              href={'/'}
+              target={'_blank'}
+              role={'button'}
+            />
           </div>
         </div>
       </div>
-    );
-  }
+    </React.Fragment>
+  );
 }

@@ -1,4 +1,38 @@
+.card {
+  width: 100%;
+}
 
-.rpl-card {
-  color: red;
+.card__image {
+  width: 100%;
+  @extend .mb2;
+}
+
+.card__title {
+  @extend .f4;
+@extend .mb2;
+}
+
+.card__description {
+  @extend .f5;
+  @extend .mb2;
+}
+
+.card__price {
+  @extend .f6;
+  @extend .mb2;
+  @extend .dib;
+}
+
+.card__price--has-discount {
+  text-decoration: line-through;
+}
+
+.card__discount-price {
+  @extend .f6;
+  @extend .mb2;
+  @extend .dib;
+  @extend .pv1;
+  @extend .ph2;
+  background: red;
+  color: palette(white);
 }

@@ -8,6 +8,53 @@
   position: relative;
   text-decoration: none;
   @extend .ph3;
+
+  &.small {
+    @extend .f6;
+
+    .button__icon {
+      width: 14px;
+    }
+  }
+
+  &.medium {
+    @extend .f5;
+
+    .button__icon {
+      width: 16px;
+    }
+  }
+
+  &.large {
+    @extend .f4;
+
+    .button__icon {
+      width: 18px;
+    }
+  }
+
+  &.x-large {
+    @extend .f3;
+
+    .button__icon {
+      width: 20px;
+    }
+  }
+
+
+    .button__icon, .button__icon + span {
+      transition: transform .3s ease-in-out;
+    }
+
+    .button__icon--left {
+      margin-right: 7px;
+
+    }
+
+    .button__icon--right {
+      margin-left: 7px;
+
+    }
 }
 
 .button.primary {
@@ -20,28 +67,24 @@
     line-height: 35px;
     height: 35px;
     min-width: 0px;
-    @extend .f6;
   }
 
   &.medium {
     line-height: 45px;
     height: 45px;
     min-width: 100px;
-    @extend .f5;
   }
 
   &.large {
     line-height: 55px;
     height: 55px;
     min-width: 200px;
-    @extend .f4;
   }
 
   &.x-large {
     line-height: 70px;
     height: 70px;
     min-width: 200px;
-    @extend .f3;
   }
 }
 
@@ -54,47 +97,11 @@
   border-radius: 0px;
   @extend .ph0;
 
-  .button__arrow {
-    transition: all .3s ease-in-out;
-    margin-left: 7px;
-  }
-
-  &.small {
-    @extend .f6;
-
-    .button__arrow {
-      width: 14px;
-    }
-  }
-
-  &.medium {
-    @extend .f5;
-
-    .button__arrow {
-      width: 16px;
-    }
-  }
-
-  &.large {
-    @extend .f4;
-
-    .button__arrow {
-      width: 18px;
-    }
-  }
-
-  &.x-large {
-    @extend .f3;
-
-    .button__arrow {
-      width: 20px;
-    }
-  }
-
   &:hover:not(.loading):not(.disabled) {
-    .button__arrow {
+    .button__icon--right, .button__icon--left + span {
       transform: translateX(5px);
     }
+    
     &:after {
       width: calc(100% - 20px);
     }

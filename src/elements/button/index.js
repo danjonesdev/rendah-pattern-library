@@ -1,4 +1,5 @@
 import React from 'react'
+import {IconLoader} from '../icon';
 
 /**
  * A Button indicates a possible user action.
@@ -6,33 +7,32 @@ import React from 'react'
 
 export default function Button({ ...props }) {
   const {
-    type,
+    htmlEntity,
     text,
     icon,
     color,
-    primary,
-    secondary,
+    type,
     fluid,
     onClick,
     size,
     inverted,
     loading,
     disabled,
+    iconFloat,
     href,
     target,
     role,
   } = props
 
-  const ElementType = type
-  const isPrimary = (primary) ? 'primary' : ''
-  const isSecondary = (secondary) ? 'secondary' : ''
+  const ElementhtmlEntity = htmlEntity
   const isFluid = (fluid) ? 'fluid' : ''
   const isInverted = (inverted) ? 'inverted' : ''
   const isLoading = (loading) ? 'loading' : ''
   const isAriaLoading = (loading) ? {'aria-label': 'Loading'} : ''
   const isDisabled = (disabled) ? 'disabled' : ''
-  const hasHref = (href) ? {href: href} : ''
-  const hasTarget = (target) ? {target: target} : ''
+  const hasHref = (href) ? {href} : ''
+  const hasTarget = (target) ? {target} : ''
+  const hasOnClick = (onClick) ? {onClick} : ''
 
   const contents = () => {
     if (loading) {
@@ -44,31 +44,42 @@ export default function Button({ ...props }) {
       );
     }
 
-    if (secondary) {
-      return (
-        <div className="flex  align-center">
-          {text}
-          <div className="button__arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+    if (icon) {
+      if (iconFloat === 'left') {
+        return (
+          <div className="flex  align-center">
+            <div className="button__icon  button__icon--left">
+              <IconLoader icon={icon} />
+            </div>
+            <span>{text}</span>
           </div>
-        </div>
-      )
+        )
+      } else {
+        return (
+          <div className="flex  align-center">
+            <span>{text}</span>
+            <div className="button__icon  button__icon--right">
+              <IconLoader icon={icon} />
+            </div>
+          </div>
+        )
+      }
     }
 
     return text
   }
 
   return (
-     <ElementType
+     <ElementhtmlEntity
        { ...hasHref }
        { ...hasTarget }
        { ...isAriaLoading }
+       { ...hasOnClick }
        disabled={props.disabled}
-       className={`button ${color} ${isPrimary} ${isSecondary} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
-       onClick={props.onClick}
+       className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
        role={role}
       >
        {contents()}
-     </ElementType>
+     </ElementhtmlEntity>
   )
 }
