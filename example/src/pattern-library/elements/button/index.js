@@ -31,7 +31,11 @@ export default function ButtonPreview({ ...props }) {
               inverted={false}
               loading={false}
               disabled={false}
-              withLinkProps={null}
+              withLinkProps={{
+                type: 'internal',
+                url: '/hello',
+                target: '_blank'
+              }}
             />
           </div>
 
