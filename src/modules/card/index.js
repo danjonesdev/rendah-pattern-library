@@ -1,12 +1,11 @@
 import React from 'react'
-import ProgressiveImage  from 'react-progressive-image';
-
+import ProgressiveImage from 'react-progressive-image'
 
 /**
  * A card displays site content in a manner similar to a playing card.
  */
 
-export default function Card({ ...props }) {
+export default function Card(props) {
   const {
     type,
     image,
@@ -19,7 +18,7 @@ export default function Card({ ...props }) {
     onClick,
     price,
     discountPrice,
-    button,
+    button
   } = props
 
   // const ElementhtmlEntity = htmlEntity
@@ -28,12 +27,11 @@ export default function Card({ ...props }) {
   // const isLoading = (loading) ? 'loading' : ''
   // const isAriaLoading = (loading) ? {'aria-label': 'Loading'} : ''
   // const isDisabled = (disabled) ? 'disabled' : ''
-  const isImageInline = (imageInline) ? 'card__image--inline' : ''
-  const hasOnClick = (onClick) ? {onClick} : ''
-
+  const isImageInline = imageInline ? 'card__image--inline' : ''
+  const hasOnClick = onClick ? { onClick } : ''
 
   const renderImage = () => {
-    if (!image) return;
+    if (!image) return
 
     return (
       <figure>
@@ -42,7 +40,13 @@ export default function Card({ ...props }) {
           src={image}
           placeholder={imagePlaceholder}
         >
-          {src => <img className={`card__image ${isImageInline}`} src={image} alt={title} />}
+          {src => (
+            <img
+              className={`card__image ${isImageInline}`}
+              src={image}
+              alt={title}
+            />
+          )}
         </ProgressiveImage>
       </figure>
     )
@@ -51,24 +55,33 @@ export default function Card({ ...props }) {
   const renderContents = () => {
     if (price || discountPrice) {
       return (
-        <div className="flex  flex-wrap">
-          <div className="col-19">
-            <h2 className="card__title">{title}</h2>
-            <p className="card__description">{description}</p>
+        <div className='flex  flex-wrap'>
+          <div className='col-19'>
+            <h2 className='card__title'>{title}</h2>
+            <p className='card__description'>{description}</p>
           </div>
-          <div className="col-5  flex  flex-wrap  justify-end">
-            {price && <span className={`card__price  ${discountPrice && 'card__price--has-discount'}`}>{price}</span>}
-            {discountPrice && <span className="card__discount-price">{discountPrice}</span>}
+          <div className='col-5  flex  flex-wrap  justify-end'>
+            {price && (
+              <span
+                className={`card__price  ${discountPrice &&
+                  'card__price--has-discount'}`}
+              >
+                {price}
+              </span>
+            )}
+            {discountPrice && (
+              <span className='card__discount-price'>{discountPrice}</span>
+            )}
           </div>
         </div>
       )
     }
 
     return (
-      <div className="flex  flex-wrap">
-        <div className="col-24">
-          {title && <h2 className="card__title">{title}</h2>}
-          {description && <p className="card__description">{description}</p>}
+      <div className='flex  flex-wrap'>
+        <div className='col-24'>
+          {title && <h2 className='card__title'>{title}</h2>}
+          {description && <p className='card__description'>{description}</p>}
         </div>
       </div>
     )
@@ -77,11 +90,9 @@ export default function Card({ ...props }) {
   const inlineCheck = () => {
     if (imageInline) {
       return (
-        <div className="flex  flex-wrap">
-          <div className="col-6">
-            {renderImage()}
-          </div>
-          <div className="col-18  ph2  pt1">
+        <div className='flex  flex-wrap'>
+          <div className='col-6'>{renderImage()}</div>
+          <div className='col-18  ph2  pt1'>
             {renderContents()}
             {button}
           </div>
@@ -90,11 +101,9 @@ export default function Card({ ...props }) {
     }
 
     return (
-      <div className="flex  flex-wrap">
-        <div className="col-24">
-          {renderImage()}
-        </div>
-        <div className="col-24  ph2">
+      <div className='flex  flex-wrap'>
+        <div className='col-24'>{renderImage()}</div>
+        <div className='col-24  ph2'>
           {renderContents()}
           {button}
         </div>
@@ -103,10 +112,7 @@ export default function Card({ ...props }) {
   }
 
   return (
-     <article
-       className={`card ${type}`}
-       { ...hasOnClick }
-      >
+    <article className={`card ${type}`} {...hasOnClick}>
       {inlineCheck()}
     </article>
   )

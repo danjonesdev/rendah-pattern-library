@@ -5,3 +5,6 @@ export Hero from './modules/hero'
 // elements
 export Button from './elements/button'
 export Icon from './elements/icon'
+
+// utils
+export withLink from './utils/with-link'
