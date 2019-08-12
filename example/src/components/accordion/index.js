@@ -48,16 +48,16 @@ export default function Accordion(props) {
           return (
             <div className='flex  flex-wrap  pv1  ph3  mb1  bb  bc-light-grey'>
               <div className='col-4  t-primary'>
-                <code className='f6  black  bg-light-grey'>{row.name}</code>
+                <code>{row.name || '-'}</code>
               </div>
               <div className='col-4  t-primary'>
-                <span className='f6  black'>{row.default}</span>
+                <span className='f6  black'>{row.default || '-'}</span>
               </div>
               <div className='col-4  t-primary'>
-                <span className='f6  black'>{row.type}</span>
+                <span className='f6  black'>&#123;{row.type || '-'}&#125;</span>
               </div>
               <div className='col-12  t-primary'>
-                <span className='f6  black'>{row.description}</span>
+                <span dangerouslySetInnerHTML={{__html: row.description || '-'}} />
               </div>
             </div>
           )

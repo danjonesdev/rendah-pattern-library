@@ -55,7 +55,7 @@ export default function Card(props) {
   const renderContents = () => {
     if (price || discountPrice) {
       return (
-        <div className='flex  flex-wrap'>
+        <div className='flex  flex-wrap  align-start  card__contents-wrapper'>
           <div className='col-19'>
             <h2 className='card__title'>{title}</h2>
             <p className='card__description'>{description}</p>
@@ -78,7 +78,7 @@ export default function Card(props) {
     }
 
     return (
-      <div className='flex  flex-wrap'>
+      <div className='flex  flex-wrap  align-start  card__contents-wrapper'>
         <div className='col-24'>
           {title && <h2 className='card__title'>{title}</h2>}
           {description && <p className='card__description'>{description}</p>}
@@ -87,33 +87,34 @@ export default function Card(props) {
     )
   }
 
-  const inlineCheck = () => {
-    if (imageInline) {
-      return (
-        <div className='flex  flex-wrap'>
-          <div className='col-6'>{renderImage()}</div>
-          <div className='col-18  ph2  pt1'>
-            {renderContents()}
-            {button}
-          </div>
-        </div>
-      )
-    }
 
+  if (imageInline) {
     return (
       <div className='flex  flex-wrap'>
-        <div className='col-24'>{renderImage()}</div>
-        <div className='col-24  ph2'>
+        <div className='col-10'>
+          {renderImage()}
+        </div>
+        <div className='col-14  ph3  pt1'>
           {renderContents()}
-          {button}
+          <div className='flex  flex-wrap  align-end  card__button-wrapper'>
+            {button}
+          </div>
         </div>
       </div>
     )
   }
 
   return (
-    <article className={`card ${type}`} {...hasOnClick}>
-      {inlineCheck()}
-    </article>
+    <div className='flex  flex-wrap'>
+      <div className='col-24'>
+        {renderImage()}
+      </div>
+      <div className='col-24  ph2  pt3'>
+        {renderContents()}
+        <div className='flex  flex-wrap  align-end  card__button-wrapper'>
+          {button}
+        </div>
+      </div>
+    </div>
   )
 }

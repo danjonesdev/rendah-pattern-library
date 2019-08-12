@@ -8,6 +8,8 @@
   position: relative;
   text-decoration: none;
   @extend .ph3;
+  @extend .flex;
+  @extend .align-center;
 
   &.small {
     @extend .f6;

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 /**
- * A Button indicates a possible user action.
+ * Determines what link type children should be wrapped in.
  */
 
 export default function WithLink(props) {

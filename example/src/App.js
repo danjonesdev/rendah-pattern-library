@@ -1,25 +1,59 @@
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import HeroPreview from './pattern-library/modules/hero';
-import CardPreview from './pattern-library/modules/card';
-import ButtonPreview from './pattern-library/elements/button';
-import IconPreview from './pattern-library/elements/icon';
+// elements
+import ButtonPreview from './docs/elements/button';
+import IconPreview from './docs/elements/icon';
 
-export default class App extends Component {
-  constructor(props){
-    super();
-    this.state = {
-    }
-  }
+// modules
+import HeroPreview from './docs/modules/hero';
+import CardPreview from './docs/modules/card';
 
-  render() {
-    return (
-      <div>
-        <HeroPreview />
-        <CardPreview />
-        <ButtonPreview />
-        <IconPreview />
+// utils
+import WithLinkPreview from './docs/utils/with-link';
+
+export default function App() {
+  return (
+    <Router>
+      <div className="flex  flex-wrap">
+        <nav className="docs-nav">
+          <div className="pa3">
+            <h1 class="t-title  f5  bold  mb2">Modules</h1>
+            <ul class="pa0  ma0  mb3">
+              <li className="mb1">
+                <Link to="/hero">Hero</Link>
+              </li>
+              <li className="mb1">
+                <Link to="/card">Card</Link>
+              </li>
+            </ul>
+            <h1 class="t-title  f5  bold  mb2">Elements</h1>
+            <ul class="pa0  ma0  mb3">
+              <li className="mb1">
+                <Link to="/button">Button</Link>
+              </li>
+              <li className="mb1">
+                <Link to="/icon">Icon</Link>
+              </li>
+            </ul>
+            <h1 class="t-title  f5  bold  mb2">Utils</h1>
+            <ul class="pa0  ma0  mb3">
+              <li className="mb1">
+                <Link to="/with-link">WithLink</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main className="docs-main">
+          <Route exact path="/" component={null} />
+          <Route exact path="/hero" component={HeroPreview} />
+          <Route path="/card" component={CardPreview} />
+          <Route path="/button" component={ButtonPreview} />
+            <Route path="/icon" component={IconPreview} />
+          <Route path="/with-link" component={WithLinkPreview} />
+        </main>
       </div>
-    );
-  }
+    </Router>
+  );
 }

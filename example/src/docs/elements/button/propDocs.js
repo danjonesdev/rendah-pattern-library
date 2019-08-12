@@ -3,66 +3,66 @@ export default [
     name: 'text',
     default: '',
     type: 'string',
-    description: 'test'
+    description: ''
   },
   {
     name: 'icon',
     default: '',
-    type: 'Component',
-    description: 'test'
+    type: 'string',
+    description: 'Accepted strings per <code>Icon</code> element'
   },
   {
     name: 'color',
     default: '',
     type: 'string',
-    description: 'test'
+    description: ''
   },
   {
     name: 'type',
     default: '',
     type: 'enum',
-    description: 'primary, secondary'
+    description: '<code>primary</code>, <code>secondary</code>',
   },
   {
     name: 'fluid',
     default: '',
     type: 'bool',
-    description: 'test'
+    description: ''
   },
   {
     name: 'onClick',
     default: '',
     type: 'func',
-    description: 'test'
+    description: ''
   },
   {
     name: 'size',
     default: '',
     type: 'enum',
-    description: 'small, medium, large, x-large'
+    description: '<code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>',
   },
   {
     name: 'inverted',
     default: '',
     type: 'bool',
-    description: 'test'
+    description: ''
   },
   {
     name: 'loading',
     default: '',
     type: 'bool',
-    description: 'test'
+    description: ''
   },
   {
     name: 'disabled',
     default: '',
     type: 'bool',
-    description: 'test'
+    description: ''
   },
   {
     name: 'withLinkProps',
     default: '',
     type: 'object',
-    description: 'WithLink'
+    description: 'Props per <code>WithLink</code> util'
   }
 ]
