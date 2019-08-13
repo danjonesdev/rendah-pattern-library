@@ -10,6 +10,7 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-truncate": "^2.4.0",
     "rendah-pattern-library": "file:.."
   },
   "scripts": {

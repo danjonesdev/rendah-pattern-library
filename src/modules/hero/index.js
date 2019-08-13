@@ -14,7 +14,7 @@ export default function Hero(props) {
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className='hero__dialog'>
-        {title && <h1 className={`hero__title  ${color}`}>{title}</h1>}
+        {title && <div className={`hero__title  ${color}`}>{title}</div>}
         {description && (
           <p className={`hero__description  ${color}`}>{description}</p>
         )}

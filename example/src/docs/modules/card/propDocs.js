@@ -2,8 +2,8 @@ export default [
   {
     name: 'title',
     default: '',
-    type: 'string',
-    description: ''
+    type: 'Component',
+    description: 'Props per <code>Heading</code> module'
   },
   {
     name: 'description',

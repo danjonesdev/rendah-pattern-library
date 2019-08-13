@@ -1,7 +1,8 @@
 import React from 'react'
-import { Icon } from "rendah-pattern-library";
+import { Icon } from 'rendah-pattern-library'
 
-import PreviewWrapper from '../../../components/preview-wrapper';
+import PreviewWrapper from '../../../components/preview-wrapper'
+import propDocs from './propDocs'
 
 export default function IconPreview({ ...props }) {
   return (
@@ -9,18 +10,16 @@ export default function IconPreview({ ...props }) {
       <PreviewWrapper
         title={'Icon'}
         description={'These are the icons'}
+        propDocs={propDocs}
       />
 
-      <div className="container  mla  mra">
+      <div className='container  mla  mra'>
         <div className={'flex  flex-wrap'}>
           <div className={'col-24  col-4-md  flex  mb4'}>
-            <Icon
-              icon={'arrow-right'}
-              color={'#000000'}
-            />
+            <Icon icon={'arrow-right'} color={'#000000'} />
           </div>
         </div>
       </div>
     </React.Fragment>
-  );
+  )
 }

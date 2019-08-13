@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PreviewWrapper from '../../../components/preview-wrapper';
+import PreviewWrapper from '../../../components/preview-wrapper'
 import propDocs from './propDocs'
 
 export default function WithLink({ ...props }) {
@@ -12,5 +12,5 @@ export default function WithLink({ ...props }) {
         propDocs={propDocs}
       />
     </React.Fragment>
-  );
+  )
 }
