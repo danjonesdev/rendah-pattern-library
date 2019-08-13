@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from 'rendah-pattern-library'
 
-import propDocs from './propDocs'
 import PreviewWrapper from '../../../components/preview-wrapper'
+import propDocs from './propDocs'
 
 export default function ButtonPreview({ ...props }) {
   return (

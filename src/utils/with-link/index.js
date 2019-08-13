@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+// const Link = 'Link'
 
 /**
  * Determines what link type children should be wrapped in.
@@ -14,7 +15,7 @@ export default function WithLink(props) {
 
   switch (withLinkProps.type) {
     case 'internal':
-    return <Link target={withLinkProps.target} to={withLinkProps.url} {...props}>{props.children}</Link>
+    return <Router><Link target={withLinkProps.target} to={withLinkProps.url} {...props}>{props.children}</Link></Router>
       break;
     case 'external':
     return <a target={withLinkProps.target} href={withLinkProps.url} {...props}>{props.children}</a>

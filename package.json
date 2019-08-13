@@ -59,6 +59,7 @@
     "dist"
   ],
   "dependencies": {
+    "classnames": "^2.2.6",
     "react-progressive-image": "^0.6.0",
     "react-router-dom": "^5.0.1"
   }

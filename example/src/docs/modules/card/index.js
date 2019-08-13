@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Button } from "rendah-pattern-library";
 
 import PreviewWrapper from '../../../components/preview-wrapper';
+import propDocs from './propDocs'
 
 export default function CardPreview({ ...props }) {
   const exampleButtonA = <Button
@@ -45,6 +46,7 @@ const exampleButtonB = <Button
       <PreviewWrapper
         title={'Card'}
         description={'These are the card variations'}
+        propDocs={propDocs}
       />
 
       <div className="container  mla  mra">
@@ -197,7 +199,7 @@ const exampleButtonB = <Button
         </div>
 
         <div className={'flex  flex-wrap'}>
-          <div className={'col-24  col-12-md  col-6-lg  flex  justify-start  align-end  pa3  mb4'}>
+          <div className={'col-24  col-12-md  col-8-lg  flex  justify-start  align-end  pa3  mb4'}>
             <Card
               type={'article'}
               image={'https://via.placeholder.com/1000'}
@@ -215,7 +217,7 @@ const exampleButtonB = <Button
             />
           </div>
 
-          <div className={'col-24  col-12-md  col-6-lg  flex  justify-start  align-end  pa3  mb4'}>
+          <div className={'col-24  col-12-md  col-8-lg  flex  justify-start  align-end  pa3  mb4'}>
             <Card
               type={'article'}
               image={'https://via.placeholder.com/1000'}
@@ -233,25 +235,7 @@ const exampleButtonB = <Button
             />
           </div>
 
-          <div className={'col-24  col-12-md  col-6-lg  flex  justify-start  align-end  pa3  mb4'}>
-            <Card
-              type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
-              title={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta.'}
-              description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'}
-              href={'/'}
-
-              target={null}
-              onClick={null}
-              price={'£12.99'}
-              discountPrice={null}
-              button={exampleButtonA}
-            />
-          </div>
-
-          <div className={'col-24  col-12-md  col-6-lg  flex  justify-start  align-end  pa3  mb4'}>
+          <div className={'col-24  col-12-md  col-8-lg  flex  justify-start  align-end  pa3  mb4'}>
             <Card
               type={'article'}
               image={'https://via.placeholder.com/1000'}

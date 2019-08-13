@@ -18,8 +18,8 @@ export default function App() {
       <div className="flex  flex-wrap">
         <nav className="docs-nav">
           <div className="pa3">
-            <h1 class="t-title  f5  bold  mb2">Modules</h1>
-            <ul class="pa0  ma0  mb3">
+            <h1 className="t-title  f5  bold  mb2">Modules</h1>
+            <ul className="pa0  ma0  mb3">
               <li className="mb1">
                 <Link to="/hero">Hero</Link>
               </li>
@@ -27,8 +27,8 @@ export default function App() {
                 <Link to="/card">Card</Link>
               </li>
             </ul>
-            <h1 class="t-title  f5  bold  mb2">Elements</h1>
-            <ul class="pa0  ma0  mb3">
+            <h1 className="t-title  f5  bold  mb2">Elements</h1>
+            <ul className="pa0  ma0  mb3">
               <li className="mb1">
                 <Link to="/button">Button</Link>
               </li>
@@ -36,8 +36,8 @@ export default function App() {
                 <Link to="/icon">Icon</Link>
               </li>
             </ul>
-            <h1 class="t-title  f5  bold  mb2">Utils</h1>
-            <ul class="pa0  ma0  mb3">
+            <h1 className="t-title  f5  bold  mb2">Utils</h1>
+            <ul className="pa0  ma0  mb3">
               <li className="mb1">
                 <Link to="/with-link">WithLink</Link>
               </li>

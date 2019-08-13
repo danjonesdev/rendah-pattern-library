@@ -1,5 +1,6 @@
 import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
+import classNames from 'classnames';
 
 /**
  * A card displays site content in a manner similar to a playing card.
@@ -30,6 +31,16 @@ export default function Card(props) {
   const isImageInline = imageInline ? 'card__image--inline' : ''
   const hasOnClick = onClick ? { onClick } : ''
 
+  const imageWrapperClass = classNames({
+    'col-10': imageInline,
+    'col-24': !imageInline,
+    });
+
+  const contentsWrapperClass = classNames({
+    'col-14  ph3  pt1': imageInline,
+    'col-24  ph2  pt3': !imageInline,
+    });
+
   const renderImage = () => {
     if (!image) return
 
@@ -56,11 +67,11 @@ export default function Card(props) {
     if (price || discountPrice) {
       return (
         <div className='flex  flex-wrap  align-start  card__contents-wrapper'>
-          <div className='col-19'>
+          <div className='col-24  col-19-md'>
             <h2 className='card__title'>{title}</h2>
             <p className='card__description'>{description}</p>
           </div>
-          <div className='col-5  flex  flex-wrap  justify-end'>
+          <div className='col-24  col-5-md  flex  flex-wrap  justify-start  justify-end-md'>
             {price && (
               <span
                 className={`card__price  ${discountPrice &&
@@ -87,29 +98,12 @@ export default function Card(props) {
     )
   }
 
-
-  if (imageInline) {
-    return (
-      <div className='flex  flex-wrap'>
-        <div className='col-10'>
-          {renderImage()}
-        </div>
-        <div className='col-14  ph3  pt1'>
-          {renderContents()}
-          <div className='flex  flex-wrap  align-end  card__button-wrapper'>
-            {button}
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className='flex  flex-wrap'>
-      <div className='col-24'>
+      <div className={imageWrapperClass}>
         {renderImage()}
       </div>
-      <div className='col-24  ph2  pt3'>
+      <div className={contentsWrapperClass}>
         {renderContents()}
         <div className='flex  flex-wrap  align-end  card__button-wrapper'>
           {button}
