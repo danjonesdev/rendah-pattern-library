@@ -1,4 +1,7 @@
 .heading{
+  // @extend .t-primary;
+  @extend .bold;
+
   &.small {
     @extend .f5;
   }

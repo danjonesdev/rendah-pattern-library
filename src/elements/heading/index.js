@@ -13,7 +13,7 @@ export default function Heading(props) {
   const ElementType = htmlEntity || 'h1'
 
   return (
-    <ElementType {...hasOnClick} class={`heading ${size} ${color}`}>
+    <ElementType {...hasOnClick} className={`heading ${size} ${color}`}>
       <HasTruncate lines={truncate}>{text}</HasTruncate>
     </ElementType>
   )

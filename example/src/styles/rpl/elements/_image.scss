@@ -1,0 +1,31 @@
+.image__wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease-in-out;
+  animation-name: image;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  @keyframes image {
+    from {
+      transform: scale(1.5);
+    }
+    to {
+     transform: scale(1);
+    }
+  }
+}
+
+.image--loading {
+  // filter: blur(8px);
+}
+
+.image.image--progressive {
+  //
+}

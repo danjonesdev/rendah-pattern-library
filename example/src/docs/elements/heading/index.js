@@ -20,7 +20,7 @@ export default function HeadingPreview(props) {
             text={'X-Large Heading'}
             color={'black'}
             size={'x-large'}
-            truncate={2}
+            truncate={null}
           />
         </div>
         <div className={'flex  flex-wrap  mb4'}>
@@ -29,7 +29,7 @@ export default function HeadingPreview(props) {
             text={'Large Heading'}
             color={'black'}
             size={'large'}
-            truncate={2}
+            truncate={null}
           />
         </div>
         <div className={'flex  flex-wrap  mb4'}>
@@ -38,7 +38,7 @@ export default function HeadingPreview(props) {
             text={'Medium Heading'}
             color={'black'}
             size={'medium'}
-            truncate={2}
+            truncate={null}
           />
         </div>
         <div className={'flex  flex-wrap  mb4'}>
@@ -47,7 +47,7 @@ export default function HeadingPreview(props) {
             text={'Small Heading'}
             color={'black'}
             size={'small'}
-            truncate={2}
+            truncate={null}
           />
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function App() {
         <nav className='docs-nav'>
           <div className='pa3'>
             <h1 className='t-title  f5  bold  mb2'>Modules</h1>
-            <ul className='pa0  ma0  mb3'>
+            <ul className='pa0  ma0  mb3  ls-none'>
               <li className='mb1'>
                 <Link to='/hero'>Hero</Link>
               </li>
@@ -31,7 +31,7 @@ export default function App() {
             </ul>
 
             <h1 className='t-title  f5  bold  mb2'>Elements</h1>
-            <ul className='pa0  ma0  mb3'>
+            <ul className='pa0  ma0  mb3  ls-none'>
               <li className='mb1'>
                 <Link to='/button'>Button</Link>
               </li>
@@ -47,7 +47,7 @@ export default function App() {
             </ul>
 
             <h1 className='t-title  f5  bold  mb2'>Utils</h1>
-            <ul className='pa0  ma0  mb3'>
+            <ul className='pa0  ma0  mb3  ls-none'>
               <li className='mb1'>
                 <Link to='/with-link'>WithLink</Link>
               </li>
