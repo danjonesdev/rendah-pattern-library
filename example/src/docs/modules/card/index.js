@@ -1,10 +1,27 @@
 import React from 'react'
-import { Card, Heading, Button } from 'rendah-pattern-library'
+import { Card, Image, Heading, Button } from 'rendah-pattern-library'
 
 import PreviewWrapper from '../../../components/preview-wrapper'
 import propDocs from './propDocs'
 
 export default function CardPreview({ ...props }) {
+  const exampleImage = (
+    <Image
+      type={''}
+      src={
+        'https://via.placeholder.com/1000x1000'
+      }
+      placeholder={
+        'https://via.placeholder.com/100x100'
+      }
+      alt={'This is the alt text.'}
+      figcaption={null}
+      progressive={true}
+      onClick={null}
+      withLinkProps={null}
+    />
+  )
+
   const exampleHeading = (
     <Heading
       htmlEntity={'h2'}
@@ -78,9 +95,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={false}
+              image={exampleImage}
+              imageColumn={24}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -91,6 +109,7 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonA}
+              truncate={3}
             />
           </div>
 
@@ -101,9 +120,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={false}
+              image={exampleImage}
+              imageColumn={24}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -113,7 +133,8 @@ export default function CardPreview({ ...props }) {
               onClick={null}
               price={null}
               discountPrice={null}
-              button={exampleButtonB}
+              button={exampleButtonA}
+              truncate={3}
             />
           </div>
 
@@ -124,9 +145,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={false}
+              image={exampleImage}
+              imageColumn={24}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -137,6 +159,7 @@ export default function CardPreview({ ...props }) {
               price={'£12.99'}
               discountPrice={null}
               button={exampleButtonA}
+              truncate={3}
             />
           </div>
 
@@ -147,9 +170,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={false}
+              image={exampleImage}
+              imageColumn={24}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -159,7 +183,8 @@ export default function CardPreview({ ...props }) {
               onClick={null}
               price={'£12.99'}
               discountPrice={'£6.99'}
-              button={exampleButtonB}
+              button={exampleButtonA}
+              truncate={3}
             />
           </div>
         </div>
@@ -172,32 +197,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
-              title={exampleHeading}
-              description={
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
-              }
-              href={'/'}
-              target={null}
-              onClick={null}
-              price={null}
-              discountPrice={null}
-              button={exampleButtonA}
-            />
-          </div>
+              image={exampleImage}
+              imageColumn={6}
 
-          <div
-            className={
-              'col-24  col-12-md  flex  justify-start  align-end  pa3  mb4'
-            }
-          >
-            <Card
-              type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -208,6 +211,7 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonB}
+              truncate={3}
             />
           </div>
 
@@ -218,9 +222,35 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
+              image={exampleImage}
+              imageColumn={6}
+
+
+              title={exampleHeading}
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
+              }
+              href={'/'}
+              target={null}
+              onClick={null}
+              price={null}
+              discountPrice={null}
+              button={exampleButtonB}
+              truncate={3}
+            />
+          </div>
+
+          <div
+            className={
+              'col-24  col-12-md  flex  justify-start  align-end  pa3  mb4'
+            }
+          >
+            <Card
+              type={'article'}
+              image={exampleImage}
+              imageColumn={6}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -230,7 +260,8 @@ export default function CardPreview({ ...props }) {
               onClick={null}
               price={'£12.99'}
               discountPrice={null}
-              button={exampleButtonA}
+              button={exampleButtonB}
+              truncate={3}
             />
           </div>
 
@@ -241,9 +272,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
+              image={exampleImage}
+              imageColumn={6}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -254,6 +286,7 @@ export default function CardPreview({ ...props }) {
               price={'£12.99'}
               discountPrice={'£6.99'}
               button={exampleButtonB}
+              truncate={3}
             />
           </div>
         </div>
@@ -266,32 +299,10 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
-              title={exampleHeading}
-              description={
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
-              }
-              href={'/'}
-              target={null}
-              onClick={null}
-              price={null}
-              discountPrice={null}
-              button={exampleButtonA}
-            />
-          </div>
+              image={exampleImage}
+              imageColumn={7}
 
-          <div
-            className={
-              'col-24  col-12-md  col-8-lg  flex  justify-start  align-end  pa3  mb4'
-            }
-          >
-            <Card
-              type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -302,6 +313,7 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonB}
+              truncate={1}
             />
           </div>
 
@@ -312,9 +324,35 @@ export default function CardPreview({ ...props }) {
           >
             <Card
               type={'article'}
-              image={'https://via.placeholder.com/1000'}
-              imagePlaceholder={'https://via.placeholder.com/100'}
-              imageInline={true}
+              image={exampleImage}
+              imageColumn={7}
+
+
+              title={exampleHeading}
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
+              }
+              href={'/'}
+              target={null}
+              onClick={null}
+              price={null}
+              discountPrice={null}
+              button={exampleButtonB}
+              truncate={1}
+            />
+          </div>
+
+          <div
+            className={
+              'col-24  col-12-md  col-8-lg  flex  justify-start  align-end  pa3  mb4'
+            }
+          >
+            <Card
+              type={'article'}
+              image={exampleImage}
+              imageColumn={7}
+
+
               title={exampleHeading}
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'
@@ -325,6 +363,7 @@ export default function CardPreview({ ...props }) {
               price={'£12.99'}
               discountPrice={'£6.99'}
               button={exampleButtonB}
+              truncate={1}
             />
           </div>
         </div>

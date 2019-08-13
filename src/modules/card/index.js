@@ -1,5 +1,6 @@
 import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
+import Truncate from 'react-truncate'
 import classNames from 'classnames'
 
 /**
@@ -10,8 +11,7 @@ export default function Card(props) {
   const {
     type,
     image,
-    imagePlaceholder,
-    imageInline,
+    imageColumn,
     title,
     description,
     href,
@@ -19,59 +19,36 @@ export default function Card(props) {
     onClick,
     price,
     discountPrice,
-    button
+    button,
+    truncate
   } = props
 
-  console.log('title', title)
-
-  // const ElementhtmlEntity = htmlEntity
-  // const isFluid = (fluid) ? 'fluid' : ''
-  // const isInverted = (inverted) ? 'inverted' : ''
-  // const isLoading = (loading) ? 'loading' : ''
-  // const isAriaLoading = (loading) ? {'aria-label': 'Loading'} : ''
-  // const isDisabled = (disabled) ? 'disabled' : ''
-  const isImageInline = imageInline ? 'card__image--inline' : ''
+  const HasTruncate = truncate ? Truncate : React.Fragment
+  const imageColumnCount = imageColumn || 0;
+  const contentColumnCount = 24 - imageColumnCount;
   const hasOnClick = onClick ? { onClick } : ''
 
-  const imageWrapperClass = classNames({
-    'col-10': imageInline,
-    'col-24': !imageInline
+  const imageColumnClass = classNames({
+    [`col-24  col-${imageColumnCount}-md`]: (imageColumnCount >= 12),
+    [`col-${imageColumnCount}`]: (imageColumnCount < 12),
   })
 
-  const contentsWrapperClass = classNames({
-    'col-14  ph3  pt1': imageInline,
-    'col-24  ph2  pt3': !imageInline
+  const contentColumnClass = classNames({
+    [`col-24  col-${contentColumnCount}-md`]: (imageColumnCount >= 12),
+    [`col-${contentColumnCount}`]: (imageColumnCount < 12),
   })
-
-  const renderImage = () => {
-    if (!image) return
-
-    return (
-      <figure>
-        <ProgressiveImage
-          delay={5000}
-          src={image}
-          placeholder={imagePlaceholder}
-        >
-          {src => (
-            <img
-              className={`card__image ${isImageInline}`}
-              src={image}
-              alt={''}
-            />
-          )}
-        </ProgressiveImage>
-      </figure>
-    )
-  }
 
   const renderContents = () => {
     if (price || discountPrice) {
       return (
         <div className='flex  flex-wrap  align-start  card__contents-wrapper'>
           <div className='col-24  col-19-md'>
-            <div className='card__title'>{title}</div>
-            <p className='card__description'>{description}</p>
+              {title && <div className='card__title'>{title}</div>}
+              {description && (
+                <p className='card__description'>
+                  <HasTruncate lines={truncate}>{description}</HasTruncate>
+                </p>
+              )}
           </div>
           <div className='col-24  col-5-md  flex  flex-wrap  justify-start  justify-end-md'>
             {price && (
@@ -94,7 +71,11 @@ export default function Card(props) {
       <div className='flex  flex-wrap  align-start  card__contents-wrapper'>
         <div className='col-24'>
           {title && <div className='card__title'>{title}</div>}
-          {description && <p className='card__description'>{description}</p>}
+          {description && (
+            <p className='card__description'>
+              <HasTruncate lines={truncate}>{description}</HasTruncate>
+            </p>
+          )}
         </div>
       </div>
     )
@@ -102,10 +83,14 @@ export default function Card(props) {
 
   return (
     <div className='flex  flex-wrap'>
-      <div className={imageWrapperClass}>{renderImage()}</div>
-      <div className={contentsWrapperClass}>
+      {image && (
+        <div className={`${imageColumnClass}`}>
+           {image}
+         </div>
+      )}
+      <div className={`${contentColumnClass}  pa2`}>
         {renderContents()}
-        <div className='flex  flex-wrap  align-end  card__button-wrapper'>
+        <div className='flex  flex-wrap  align-start  card__button-wrapper'>
           {button}
         </div>
       </div>

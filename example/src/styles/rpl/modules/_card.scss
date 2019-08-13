@@ -3,19 +3,16 @@
 }
 
 .card__image {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  @extend .shadow2;
+  //
 }
 
 .card__image--inline {
-  height: 155px;
+  //
 }
 
 .card__contents-wrapper {
   position: relative;
-  height: 100px;
+  // height: 100px;
 }
 
 .card__title {
@@ -25,7 +22,7 @@
 
 .card__description {
   @extend .f5;
-  @extend .mb2;
+  @extend .mb3;
 }
 
 .card__price {
@@ -50,5 +47,5 @@
 
 
 .card__button-wrapper {
-  height: 50px;
+  // height: 50px;
 }
