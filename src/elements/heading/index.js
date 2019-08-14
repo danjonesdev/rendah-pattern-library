@@ -10,7 +10,7 @@ export default function Heading(props) {
 
   const ElementType = htmlEntity || 'h1'
   const hasTruncate = truncate ? true : false;
-  const ElementTypeInner = hasTruncate ? Truncate : React.Fragment
+  const ElementTypeInner = hasTruncate ? React.Fragment : React.Fragment
   const hasOnClick = onClick ? { onClick } : ''
 
 

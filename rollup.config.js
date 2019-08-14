@@ -37,7 +37,8 @@ export default {
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        'node_modules/react-is/index.js': ['isValidElementType']
+        'node_modules/react-is/index.js': ['isValidElementType'],
+        'node_modules/react-parallax/dist/index.js': ['Parallax', 'Background']
       }
     })
   ]

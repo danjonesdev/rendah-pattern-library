@@ -1,5 +1,7 @@
 import React from 'react'
 import ProgressiveImage from 'react-progressive-image'
+import { Parallax, Background } from 'react-parallax';
+
 /**
  * An Image.
  */
@@ -25,7 +27,9 @@ export default function Image(props) {
       <div className="image__wrapper">
         <ProgressiveImage delay={500} src={src} placeholder={placeholder}>
           {(src, loading) => (
-            <img className={`image  image--progressive ${loading ? 'image--loading' : ''}  object-fit-${hasObjectFit}`} src={src} alt={alt} />
+            <Parallax bgImage={src} strength={50}>
+              <div style={{ height: 150 }}></div>
+            </Parallax>
           )}
         </ProgressiveImage>
       </div>

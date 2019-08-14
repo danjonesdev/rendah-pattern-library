@@ -9,7 +9,7 @@ export default function Copy(props) {
   const { text, color, onClick, size, iconFloat, truncate } = props
 
   const hasTruncate = truncate ? true : false;
-  const ElementTypeInner = hasTruncate ? Truncate : React.Fragment
+  const ElementTypeInner = hasTruncate ? React.Fragment : React.Fragment
   const hasOnClick = onClick ? { onClick } : ''
 
 
