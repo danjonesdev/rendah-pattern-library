@@ -1,6 +1,7 @@
 .heading{
   // @extend .t-primary;
   @extend .bold;
+  @extend .lh-title;
 
   &.small {
     @extend .f5;
