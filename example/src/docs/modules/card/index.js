@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Image, Heading, Button } from "rendah-pattern-library";
+import { Card, Image, Heading, Copy, Button } from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
@@ -9,10 +9,11 @@ export default function CardPreview({ ...props }) {
     <Image
       type={""}
       src={"https://via.placeholder.com/1000x1000"}
-      placeholder={"https://via.placeholder.com/100x100"}
+      placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
       progressive={true}
+      objectFit={'cover'}
       onClick={null}
       withLinkProps={null}
     />
@@ -39,6 +40,15 @@ export default function CardPreview({ ...props }) {
       truncate={2}
     />
   );
+
+  const exampleCopy = (
+    <Copy
+      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio.'}
+      color={'black'}
+      size={'medium'}
+      truncate={2}
+    />
+  )
 
   const exampleButtonA = (
     <Button
@@ -105,7 +115,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={24}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -113,7 +123,6 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonA}
-              truncate={3}
             />
           </div>
 
@@ -128,7 +137,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={24}
               title={exampleHeadingB}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+              exampleCopy
               }
               href={"/"}
               target={null}
@@ -136,7 +145,6 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonA}
-              truncate={3}
             />
           </div>
 
@@ -151,7 +159,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={24}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -159,7 +167,6 @@ export default function CardPreview({ ...props }) {
               price={"£12.99"}
               discountPrice={null}
               button={exampleButtonA}
-              truncate={3}
             />
           </div>
 
@@ -174,7 +181,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={24}
               title={exampleHeadingB}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -182,7 +189,6 @@ export default function CardPreview({ ...props }) {
               price={"£12.99"}
               discountPrice={"£6.99"}
               button={exampleButtonA}
-              truncate={3}
             />
           </div>
         </div>
@@ -199,7 +205,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={6}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -207,7 +213,6 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonB}
-              truncate={3}
             />
           </div>
 
@@ -222,7 +227,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={6}
               title={exampleHeadingB}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -230,7 +235,6 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonB}
-              truncate={3}
             />
           </div>
 
@@ -245,7 +249,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={6}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -253,7 +257,6 @@ export default function CardPreview({ ...props }) {
               price={"£12.99"}
               discountPrice={null}
               button={exampleButtonB}
-              truncate={3}
             />
           </div>
 
@@ -268,7 +271,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={6}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -276,7 +279,6 @@ export default function CardPreview({ ...props }) {
               price={"£12.99"}
               discountPrice={"£6.99"}
               button={exampleButtonB}
-              truncate={3}
             />
           </div>
         </div>
@@ -293,7 +295,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={7}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -301,7 +303,6 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonB}
-              truncate={1}
             />
           </div>
 
@@ -316,7 +317,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={7}
               title={exampleHeadingB}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -324,7 +325,6 @@ export default function CardPreview({ ...props }) {
               price={null}
               discountPrice={null}
               button={exampleButtonB}
-              truncate={1}
             />
           </div>
 
@@ -339,7 +339,7 @@ export default function CardPreview({ ...props }) {
               imageColumn={7}
               title={exampleHeadingA}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
+                exampleCopy
               }
               href={"/"}
               target={null}
@@ -347,7 +347,6 @@ export default function CardPreview({ ...props }) {
               price={"£12.99"}
               discountPrice={"£6.99"}
               button={exampleButtonB}
-              truncate={1}
             />
           </div>
         </div>

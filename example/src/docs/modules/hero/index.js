@@ -10,7 +10,7 @@ export default function HeroPreview({ ...props }) {
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
       color={'black'}
       size={'large'}
-      truncate={2}
+      truncate={null}
     />
   )
 

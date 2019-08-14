@@ -20,10 +20,8 @@ export default function Card(props) {
     price,
     discountPrice,
     button,
-    truncate
   } = props;
 
-  const HasTruncate = truncate ? Truncate : React.Fragment;
   const imageColumnCount = imageColumn || 0;
   const contentColumnCount = 24 - imageColumnCount;
   const hasOnClick = onClick ? { onClick } : "";
@@ -44,17 +42,13 @@ export default function Card(props) {
         <div className="flex  flex-wrap  align-start  card__contents-wrapper">
           <div className="col-24  col-19-md">
             {title && <div className="card__title">{title}</div>}
-            {description && (
-              <p className="card__description">
-                <HasTruncate lines={truncate}>{description}</HasTruncate>
-              </p>
-            )}
+            {description && <div className="card__description">{description}</div>}
           </div>
           <div className="col-24  col-5-md  flex  flex-wrap  justify-start  justify-end-md">
             {price && (
               <span
                 className={`card__price  ${discountPrice &&
-                  "card__price--has-discount"}`}
+                  "card__price--has-discount"}  tar  w-100`}
               >
                 {price}
               </span>
@@ -71,11 +65,7 @@ export default function Card(props) {
       <div className="flex  flex-wrap  align-start  card__contents-wrapper">
         <div className="col-24">
           {title && <div className="card__title">{title}</div>}
-          {description && (
-            <p className="card__description">
-              <HasTruncate lines={truncate}>{description}</HasTruncate>
-            </p>
-          )}
+          {description && <div className="card__description">{description}</div>}
         </div>
       </div>
     );

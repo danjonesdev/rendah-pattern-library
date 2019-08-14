@@ -6,6 +6,7 @@ export Hero from './modules/hero'
 export Button from './elements/button'
 export Icon from './elements/icon'
 export Heading from './elements/heading'
+export Copy from './elements/copy'
 export Image from './elements/image'
 
 // utils

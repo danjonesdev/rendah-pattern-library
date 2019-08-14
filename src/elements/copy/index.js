@@ -2,13 +2,12 @@ import React from 'react'
 import Truncate from 'react-truncate'
 
 /**
- * A Heading.
+ * A Copy.
  */
 
-export default function Heading(props) {
-  const { text, color, onClick, htmlEntity, size, iconFloat, truncate } = props
+export default function Copy(props) {
+  const { text, color, onClick, size, iconFloat, truncate } = props
 
-  const ElementType = htmlEntity || 'h1'
   const hasTruncate = truncate ? true : false;
   const ElementTypeInner = hasTruncate ? Truncate : React.Fragment
   const hasOnClick = onClick ? { onClick } : ''
@@ -17,19 +16,19 @@ export default function Heading(props) {
   let lineHeight;
   switch (size) {
     case 'small':
-      lineHeight = 20;
+      lineHeight = 16;
       break;
     case 'medium':
-      lineHeight = 24;
+      lineHeight = 18;
       break;
     case 'large':
-      lineHeight = 28;
+      lineHeight = 20;
       break;
     case 'x-large':
-      lineHeight = 32;
+      lineHeight = 22;
       break;
     default:
-    lineHeight = 20;
+    lineHeight = 24;
   }
 
   const styles = {
@@ -38,8 +37,8 @@ export default function Heading(props) {
   };
 
   return (
-    <ElementType {...hasOnClick} className={`heading ${size} ${color}`} style={styles}>
+    <p {...hasOnClick} className={`copy ${size} ${color}`} style={styles}>
       <ElementTypeInner lines={truncate}>{text}</ElementTypeInner>
-    </ElementType>
+    </p>
   )
 }

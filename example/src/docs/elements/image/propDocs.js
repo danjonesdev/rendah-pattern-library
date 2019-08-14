@@ -36,6 +36,12 @@ export default [
     description: ''
   },
   {
+    name: 'objectFit',
+    default: '',
+    type: 'string',
+    description: ''
+  },
+  {
     name: 'onClick',
     default: '',
     type: 'func',

@@ -9,6 +9,7 @@ import CardPreview from './docs/modules/card'
 import ButtonPreview from './docs/elements/button'
 import IconPreview from './docs/elements/icon'
 import HeadingPreview from './docs/elements/heading'
+import CopyPreview from './docs/elements/copy'
 import ImagePreview from './docs/elements/image'
 
 // utils
@@ -42,6 +43,9 @@ export default function App() {
                 <Link to='/heading'>Heading</Link>
               </li>
               <li className='mb1'>
+                <Link to='/copy'>Copy</Link>
+              </li>
+              <li className='mb1'>
                 <Link to='/image'>Image</Link>
               </li>
             </ul>
@@ -62,6 +66,7 @@ export default function App() {
           <Route path='/button' component={ButtonPreview} />
           <Route path='/icon' component={IconPreview} />
           <Route path='/heading' component={HeadingPreview} />
+          <Route path='/copy' component={CopyPreview} />
           <Route path='/image' component={ImagePreview} />
           <Route path='/with-link' component={WithLinkPreview} />
         </main>
