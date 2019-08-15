@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressiveImage from "react-progressive-image";
 
 /**
  * A card displays site content in a manner similar to a playing card.
@@ -11,7 +10,6 @@ export default function CardThumbnail(props) {
     image,
     title,
     description,
-    href,
     target,
     onClick,
     price,
@@ -63,7 +61,7 @@ export default function CardThumbnail(props) {
   return (
     <div className="card  card--small  flex  flex-wrap">
       {image && <div className="col-6">{image}</div>}
-      <div className="col-18  pt2">
+      <div className="col-18  pa2">
         {renderContents()}
         <div className="flex  flex-wrap  align-start  card__button-wrapper">
           {button}

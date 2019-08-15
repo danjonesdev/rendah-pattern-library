@@ -11,8 +11,6 @@ export default function CardBlock(props) {
     image,
     title,
     description,
-    href,
-    target,
     onClick,
     price,
     discountPrice,

@@ -24,7 +24,7 @@ export default function ImagePreview(props) {
               figcaption={"This is a figcaption."}
               progressive={true}
               objectFit={"cover"}
-              height={200}
+              height={400}
               onClick={null}
               withLinkProps={null}
             />

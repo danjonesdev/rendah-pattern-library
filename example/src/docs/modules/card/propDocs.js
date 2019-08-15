@@ -1,5 +1,17 @@
 export default [
   {
+    name: 'image',
+    default: '',
+    type: 'Component',
+    description: 'Props per <code>Image</code> module'
+  },
+  {
+    name: 'type',
+    default: '',
+    type: 'string',
+    description: ''
+  },
+  {
     name: 'title',
     default: '',
     type: 'Component',
@@ -12,15 +24,27 @@ export default [
     description: ''
   },
   {
-    name: 'type',
+    name: 'onClick',
     default: '',
-    type: 'enum',
-    description: '<code>block</code>, <code>inline</code>',
+    type: 'func',
+    description: ''
   },
   {
-    name: 'withLinkProps',
+    name: 'price',
     default: '',
-    type: 'object',
-    description: 'Props per <code>WithLink</code> util'
+    type: 'string',
+    description: ''
+  },
+  {
+    name: 'discountPrice',
+    default: '',
+    type: 'string',
+    description: ''
+  },
+  {
+    name: 'button',
+    default: '',
+    type: 'Component',
+    description: 'Props per <code>Button</code> module',
   }
 ]

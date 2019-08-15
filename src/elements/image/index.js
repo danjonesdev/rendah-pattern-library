@@ -1,6 +1,5 @@
 import React from "react";
 import ProgressiveImage from "react-progressive-image";
-
 import { Parallax, Background } from "react-parallax";
 
 /**

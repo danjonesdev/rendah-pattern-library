@@ -11,18 +11,21 @@
     object-fit: cover;
   }
 
-  // animation-name: image;
-  // animation-duration: 1s;
-  // animation-timing-function: ease-out;
-  //
-  // @keyframes image {
-  //   from {
-  //     transform: scale(1.5);
-  //   }
-  //   to {
-  //    transform: scale(1);
-  //   }
-  // }
+.react-parallax {
+  animation-name: image;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  @keyframes image {
+    from {
+      transform: scale(1.5);
+    }
+    to {
+     transform: scale(1);
+    }
+  }
+}
+
 }
 
 .image__wrapper--loading {

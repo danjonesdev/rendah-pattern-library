@@ -39,29 +39,7 @@ export default function CardThumbnailPreview({ ...props }) {
       }
       color={"black"}
       size={"medium"}
-      truncate={2}
-    />
-  );
-
-  const cardthumbnailButton = (
-    <Button
-      htmlEntity={"a"}
-      text={"Click here"}
-      icon={"arrow-right"}
-      color={"black"}
-      type={"primary"}
-      fluid={false}
-      onClick={null}
-      size={"small"}
-      inverted={false}
-      loading={false}
-      disabled={false}
-      iconFloat={null}
-      withLinkProps={{
-        type: "internal",
-        url: "/hello",
-        target: "_blank"
-      }}
+      truncate={1}
     />
   );
 
@@ -77,7 +55,7 @@ export default function CardThumbnailPreview({ ...props }) {
         <div className={"flex  flex-wrap"}>
           <div
             className={
-              "col-24  col-6-md  flex  justify-start  align-start  pa3  mb4"
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
             }
           >
             <Card
@@ -90,13 +68,13 @@ export default function CardThumbnailPreview({ ...props }) {
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardthumbnailButton}
+              button={null}
             />
           </div>
 
           <div
             className={
-              "col-24  col-6-md  flex  justify-start  align-start  pa3  mb4"
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
             }
           >
             <Card
@@ -109,13 +87,13 @@ export default function CardThumbnailPreview({ ...props }) {
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardthumbnailButton}
+              button={null}
             />
           </div>
 
           <div
             className={
-              "col-24  col-6-md  flex  justify-start  align-start  pa3  mb4"
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
             }
           >
             <Card
@@ -128,13 +106,13 @@ export default function CardThumbnailPreview({ ...props }) {
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardthumbnailButton}
+              button={null}
             />
           </div>
 
           <div
             className={
-              "col-24  col-6-md  flex  justify-start  align-start  pa3  mb4"
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
             }
           >
             <Card
@@ -147,7 +125,85 @@ export default function CardThumbnailPreview({ ...props }) {
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardthumbnailButton}
+              button={null}
+            />
+          </div>
+        </div>
+
+        <div className={"flex  flex-wrap"}>
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
+            }
+          >
+            <Card
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
+              href={"/"}
+              target={null}
+              onClick={null}
+              price={'£9.99'}
+              discountPrice={null}
+              button={null}
+            />
+          </div>
+
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
+            }
+          >
+            <Card
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
+              href={"/"}
+              target={null}
+              onClick={null}
+              price={'£9.99'}
+              discountPrice={null}
+              button={null}
+            />
+          </div>
+
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
+            }
+          >
+            <Card
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
+              href={"/"}
+              target={null}
+              onClick={null}
+              price={'£9.99'}
+              discountPrice={'£4.99'}
+              button={null}
+            />
+          </div>
+
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
+            }
+          >
+            <Card
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
+              href={"/"}
+              target={null}
+              onClick={null}
+              price={'£9.99'}
+              discountPrice={'£4.99'}
+              button={null}
             />
           </div>
         </div>
