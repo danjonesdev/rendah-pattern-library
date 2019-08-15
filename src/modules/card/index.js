@@ -1,6 +1,5 @@
 import React from "react";
 import ProgressiveImage from "react-progressive-image";
-import Truncate from "react-truncate";
 import classNames from "classnames";
 
 /**
@@ -19,7 +18,7 @@ export default function Card(props) {
     onClick,
     price,
     discountPrice,
-    button,
+    button
   } = props;
 
   const imageColumnCount = imageColumn || 0;
@@ -42,7 +41,9 @@ export default function Card(props) {
         <div className="flex  flex-wrap  align-start  card__contents-wrapper">
           <div className="col-24  col-19-md">
             {title && <div className="card__title">{title}</div>}
-            {description && <div className="card__description">{description}</div>}
+            {description && (
+              <div className="card__description">{description}</div>
+            )}
           </div>
           <div className="col-24  col-5-md  flex  flex-wrap  justify-start  justify-end-md">
             {price && (
@@ -65,7 +66,9 @@ export default function Card(props) {
       <div className="flex  flex-wrap  align-start  card__contents-wrapper">
         <div className="col-24">
           {title && <div className="card__title">{title}</div>}
-          {description && <div className="card__description">{description}</div>}
+          {description && (
+            <div className="card__description">{description}</div>
+          )}
         </div>
       </div>
     );
