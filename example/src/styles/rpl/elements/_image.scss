@@ -25,10 +25,6 @@
   // }
 }
 
-.custom-bg {
-  height: 500px;
-}
-
 .image__wrapper--loading {
   img {
     filter: blur(15px);
@@ -43,4 +39,8 @@
 
 .image.image--progressive {
   //
+}
+
+.image__spacer {
+  min-height: 100px;
 }

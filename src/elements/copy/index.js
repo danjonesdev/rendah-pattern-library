@@ -38,7 +38,7 @@ export default function Copy(props) {
   return (
     <p {...hasOnClick} className={`copy ${size} ${color}`} style={styles}>
       <TruncateMarkup lines={truncate}>
-        <div>{text}</div>
+        <span>{text}</span>
       </TruncateMarkup>
     </p>
   );

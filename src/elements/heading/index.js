@@ -43,7 +43,7 @@ export default function Heading(props) {
       style={styles}
     >
       <ElementTypeInner lines={truncate}>
-        <div>{text}</div>
+        <span>{text}</span>
       </ElementTypeInner>
     </ElementType>
   );

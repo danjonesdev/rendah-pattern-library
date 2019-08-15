@@ -16,6 +16,7 @@ export default function Image(props) {
     figcaption,
     progressive,
     // objectFit,
+    height,
     onClick,
     withLinkProps
   } = props;
@@ -34,7 +35,7 @@ export default function Image(props) {
             }`}
           >
             <Parallax bgImage={src} strength={30}>
-              <div style={{ height: 150 }}></div>
+              <div style={{ height: height }}></div>
             </Parallax>
           </div>
         )}
