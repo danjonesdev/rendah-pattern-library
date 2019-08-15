@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, Image, Heading, Copy, Button } from "rendah-pattern-library";
 
-import PreviewWrapper from "../../../components/preview-wrapper";
-import propDocs from "./propDocs";
+import PreviewWrapper from "../../../../components/preview-wrapper";
+import propDocs from "../propDocs";
 
-export default function CardPreview({ ...props }) {
-  const cardblockImage = (
+export default function CardThumbnailPreview({ ...props }) {
+  const cardthumbnailImage = (
     <Image
       type={""}
       src={"https://via.placeholder.com/1000x1000"}
@@ -14,13 +14,13 @@ export default function CardPreview({ ...props }) {
       figcaption={null}
       progressive={true}
       objectFit={"cover"}
-      height={200}
+      height={80}
       onClick={null}
       withLinkProps={null}
     />
   );
 
-  const cardBlockHeading = (
+  const cardthumbnailHeading = (
     <Heading
       htmlEntity={"h2"}
       text={
@@ -32,7 +32,7 @@ export default function CardPreview({ ...props }) {
     />
   );
 
-  const cardBlockCopy = (
+  const cardthumbnailCopy = (
     <Copy
       text={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
@@ -43,7 +43,7 @@ export default function CardPreview({ ...props }) {
     />
   );
 
-  const cardBlockButton = (
+  const cardthumbnailButton = (
     <Button
       htmlEntity={"a"}
       text={"Click here"}
@@ -81,16 +81,16 @@ export default function CardPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
-              type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
               href={"/"}
               target={null}
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              button={cardthumbnailButton}
             />
           </div>
 
@@ -100,16 +100,16 @@ export default function CardPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
-              type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
               href={"/"}
               target={null}
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              button={cardthumbnailButton}
             />
           </div>
 
@@ -119,16 +119,16 @@ export default function CardPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
-              type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
               href={"/"}
               target={null}
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              button={cardthumbnailButton}
             />
           </div>
 
@@ -138,16 +138,16 @@ export default function CardPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
-              type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              image={cardthumbnailImage}
+              type={"thumbnail"}
+              title={cardthumbnailHeading}
+              description={cardthumbnailCopy}
               href={"/"}
               target={null}
               onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              button={cardthumbnailButton}
             />
           </div>
         </div>
