@@ -11,3 +11,4 @@ export Image from "./elements/image";
 
 // utils
 export withLink from "./utils/with-link";
+export PageThemeParallax from "./utils/page-theme-parallax";

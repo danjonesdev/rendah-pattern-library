@@ -60,6 +60,7 @@
   ],
   "dependencies": {
     "classnames": "^2.2.6",
+    "loadash": "^1.0.0",
     "react-parallax": "^2.2.0",
     "react-parallax-component": "^1.0.6",
     "react-progressive-image": "^0.6.0",
