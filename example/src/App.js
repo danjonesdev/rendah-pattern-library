@@ -15,6 +15,7 @@ import ImagePreview from "./docs/elements/image";
 
 // utils
 import WithLinkPreview from "./docs/utils/with-link";
+import PageThemeParallax from "./docs/utils/page-theme-parallax";
 
 export default function App() {
   return (
@@ -59,6 +60,9 @@ export default function App() {
               <li className="mb1">
                 <Link to="/with-link">WithLink</Link>
               </li>
+              <li className="mb1">
+                <Link to="/page-theme-parallax">PageThemeParallax</Link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -77,6 +81,7 @@ export default function App() {
           <Route path="/image" component={ImagePreview} />
           {/* Utils */}
           <Route path="/with-link" component={WithLinkPreview} />
+          <Route path="/page-theme-parallax" component={PageThemeParallax} />
         </main>
       </div>
     </Router>

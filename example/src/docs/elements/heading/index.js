@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Heading, PageThemeParallax } from "rendah-pattern-library";
+import { Heading } from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
@@ -7,7 +7,6 @@ import propDocs from "./propDocs";
 export default function HeadingPreview(props) {
   return (
     <React.Fragment>
-      <PageThemeParallax />
       <PreviewWrapper
         title={"Heading"}
         description={"These are the icons"}

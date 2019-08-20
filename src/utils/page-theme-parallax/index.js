@@ -16,13 +16,13 @@ export default function PageThemeParallax() {
 
   switch (true) {
     case windowHeight >= 0 && windowHeight < 1000:
-      numberOfItems = 5;
+      numberOfItems = 4;
       break;
     case windowHeight >= 1000 && windowHeight < 200:
-      numberOfItems = 10;
+      numberOfItems = 8;
       break;
     case windowHeight >= 200 && windowHeight < 3000:
-      numberOfItems = 15;
+      numberOfItems = 12;
       break;
   }
 
@@ -35,9 +35,9 @@ export default function PageThemeParallax() {
 
     // set wrapper style
     const wrapperStyles = {
-      [_.sample(["left", "right"])]: `${_.random(0, 100)}px`,
+      [_.sample(["left", "right"])]: `${_.random(-200, -100)}px`,
       top: divideHeight * (index + 1) + "px",
-      width: _.random(50, 100) + "px",
+      width: _.random(50, 150) + "px",
       opacity: _.random(0.1, 1)
     };
 
