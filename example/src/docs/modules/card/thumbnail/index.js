@@ -63,7 +63,6 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
               price={null}
@@ -82,7 +81,6 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
               price={null}
@@ -101,7 +99,6 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
               price={null}
@@ -120,7 +117,6 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
               price={null}
@@ -141,10 +137,9 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={null}
             />
@@ -160,10 +155,9 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={null}
             />
@@ -179,11 +173,10 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={null}
             />
           </div>
@@ -198,11 +191,10 @@ export default function CardThumbnailPreview({ ...props }) {
               type={"thumbnail"}
               title={cardthumbnailHeading}
               description={cardthumbnailCopy}
-              href={"/"}
               target={null}
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={null}
             />
           </div>

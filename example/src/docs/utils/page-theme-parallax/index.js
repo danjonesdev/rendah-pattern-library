@@ -1,5 +1,12 @@
 import React from "react";
-import { PageThemeParallax, Card, Image, Heading, Copy, Button } from "rendah-pattern-library";
+import {
+  PageThemeParallax,
+  Card,
+  Image,
+  Heading,
+  Copy,
+  Button
+} from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
@@ -68,8 +75,10 @@ export default function CardBlockPreview({ ...props }) {
   return (
     <React.Fragment>
       <PreviewWrapper
-        title={'PageThemeParallax'}
-        description={'Applies the theme parallax icons relative to the parent element width'}
+        title={"PageThemeParallax"}
+        description={
+          "Applies the theme parallax icons relative to the parent element width"
+        }
         propDocs={propDocs}
       />
 
@@ -87,8 +96,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -106,8 +113,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -125,8 +130,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -144,8 +147,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -165,11 +166,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'null'}
+              price={"£9.99"}
+              discountPrice={"null"}
               button={cardBlockButton}
             />
           </div>
@@ -184,10 +183,8 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={cardBlockButton}
             />
@@ -203,11 +200,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -222,11 +217,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
-              onClick={'£9.99'}
+              onClick={"£9.99"}
               price={null}
-              discountPrice={'£4.99'}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -243,11 +236,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'null'}
+              price={"£9.99"}
+              discountPrice={"null"}
               button={cardBlockButton}
             />
           </div>
@@ -262,10 +253,8 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={cardBlockButton}
             />
@@ -281,11 +270,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -300,11 +287,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
-              onClick={'£9.99'}
+              onClick={"£9.99"}
               price={null}
-              discountPrice={'£4.99'}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -321,11 +306,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'null'}
+              price={"£9.99"}
+              discountPrice={"null"}
               button={cardBlockButton}
             />
           </div>
@@ -340,10 +323,8 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={cardBlockButton}
             />
@@ -359,11 +340,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -378,11 +357,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
-              onClick={'£9.99'}
+              onClick={"£9.99"}
               price={null}
-              discountPrice={'£4.99'}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -399,11 +376,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'null'}
+              price={"£9.99"}
+              discountPrice={"null"}
               button={cardBlockButton}
             />
           </div>
@@ -418,10 +393,8 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={cardBlockButton}
             />
@@ -437,11 +410,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -456,11 +427,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
-              onClick={'£9.99'}
+              onClick={"£9.99"}
               price={null}
-              discountPrice={'£4.99'}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -477,11 +446,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'null'}
+              price={"£9.99"}
+              discountPrice={"null"}
               button={cardBlockButton}
             />
           </div>
@@ -496,10 +463,8 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={cardBlockButton}
             />
@@ -515,11 +480,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -534,11 +497,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
-              onClick={'£9.99'}
+              onClick={"£9.99"}
               price={null}
-              discountPrice={'£4.99'}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>

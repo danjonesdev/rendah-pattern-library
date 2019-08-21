@@ -9,7 +9,7 @@ export default function HeadingPreview(props) {
     <React.Fragment>
       <PreviewWrapper
         title={"Heading"}
-        description={"These are the icons"}
+        description={"Heading only really varies in it's size"}
         propDocs={propDocs}
       />
 

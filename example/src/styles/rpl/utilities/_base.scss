@@ -15,6 +15,7 @@ body {
   color: $body-color;
   background-color: $body-background-color;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1,

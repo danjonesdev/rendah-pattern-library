@@ -9,7 +9,7 @@ export default function ImagePreview(props) {
     <React.Fragment>
       <PreviewWrapper
         title={"Image"}
-        description={"These are the Images"}
+        description={"Single images"}
         propDocs={propDocs}
       />
 
