@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import _ from "lodash";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
@@ -7,6 +7,14 @@ import { ParallaxProvider, Parallax } from "react-scroll-parallax";
  */
 
 export default function PageThemeParallax() {
+  const [render, setRender] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setRender(true);
+    }, 1000);
+  });
+
   const windowHeight =
     document.documentElement.scrollHeight ||
     document.documentElement.offsetHeight ||
@@ -53,7 +61,7 @@ export default function PageThemeParallax() {
           tagOuter="figure"
         >
           <img
-            classList={`page-theme-parallax__icon`}
+            className={`page-theme-parallax__icon`}
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/%E6%A5%8A%E5%A7%93_-_%E6%A5%B7%E4%BD%93.svg/440px-%E6%A5%8A%E5%A7%93_-_%E6%A5%B7%E4%BD%93.svg.png"
           />
         </Parallax>
@@ -61,13 +69,17 @@ export default function PageThemeParallax() {
     );
   };
 
-  return (
-    <ParallaxProvider>
-      <div className="container  mla  mra  relative">
-        {numberOfItemsToLoop.map((index, i) => {
-          return renderIcon(index, i);
-        })}
-      </div>
-    </ParallaxProvider>
-  );
+  if (render) {
+    return (
+      <ParallaxProvider>
+        <div className="container  mla  mra  relative">
+          {numberOfItemsToLoop.map((index, i) => {
+            return renderIcon(index, i);
+          })}
+        </div>
+      </ParallaxProvider>
+    );
+  }
+
+  return null;
 }

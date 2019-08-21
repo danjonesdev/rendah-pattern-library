@@ -4,4 +4,19 @@
 }
 
 .page-theme-parallax__icon {
+  opacity: 0;
+  -webkit-animation-name: page-theme-parallax__icon;
+  -webkit-animation-duration: 5s;
+  animation-name: page-theme-parallax__icon;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes page-theme-parallax__icon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
