@@ -11,32 +11,33 @@
     object-fit: cover;
   }
 
-.react-parallax {
-  animation-name: image;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-
-  @keyframes image {
-    from {
-      transform: scale(1.5);
-    }
-    to {
-     transform: scale(1);
-    }
-  }
-}
-
+  // .react-parallax {
+  //   animation-name: image;
+  //   animation-duration: 1s;
+  //   animation-timing-function: ease-out;
+  //
+  //   @keyframes image {
+  //     from {
+  //       transform: scale(1.5);
+  //     }
+  //     to {
+  //      transform: scale(1);
+  //     }
+  //   }
+  // }
 }
 
 .image__wrapper--loading {
   img {
     filter: blur(15px);
+    transform: scale(1.5);
   }
 }
 
 .image__wrapper--loaded {
   img {
     //
+    transform: scale(1);
   }
 }
 

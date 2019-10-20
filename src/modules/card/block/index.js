@@ -23,7 +23,7 @@ export default function CardBlock(props) {
     const priceBlock = () => {
       if (price || discountPrice) {
         return  (
-            <div className="col-24  flex  pt2">
+            <div className="col-24  flex">
               {price && (
                 <span
                   className={`card__price  ${discountPrice &&

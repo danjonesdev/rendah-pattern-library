@@ -12,6 +12,7 @@
 
 .card__contents-wrapper {
   position: relative;
+  @extend .pt2;
 }
 
 .card__title {
