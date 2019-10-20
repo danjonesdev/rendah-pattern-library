@@ -1,6 +1,6 @@
 import React from "react";
 import ProgressiveImage from "react-progressive-image";
-import { Parallax, Background } from "react-parallax";
+// import { Parallax, Background } from "react-parallax";
 
 /**
  * An Image.
@@ -24,6 +24,10 @@ export default function Image(props) {
   const ElementType = progressive ? ProgressiveImage : React.Fragment;
   // const hasObjectFit = objectFit ? objectFit : "contain";
 
+  const styles = {
+    height: `${height}px`
+  };
+
   return (
     <figure>
       <ElementType delay={500} src={src} placeholder={placeholder}>
@@ -33,9 +37,7 @@ export default function Image(props) {
               loading ? "image__wrapper--loading" : "image__wrapper--loaded"
             }`}
           >
-            <Parallax bgImage={src} strength={30}>
-              <div style={{ height: height }}></div>
-            </Parallax>
+            <img src={src} style={styles} />
           </div>
         )}
       </ElementType>

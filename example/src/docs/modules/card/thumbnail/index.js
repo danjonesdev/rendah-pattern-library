@@ -136,7 +136,7 @@ export default function CardThumbnailPreview({ ...props }) {
               image={cardthumbnailImage}
               type={"thumbnail"}
               title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
+              description={null}
               target={null}
               onClick={null}
               price={"£9.99"}
@@ -154,7 +154,7 @@ export default function CardThumbnailPreview({ ...props }) {
               image={cardthumbnailImage}
               type={"thumbnail"}
               title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
+              description={null}
               target={null}
               onClick={null}
               price={"£9.99"}
@@ -172,7 +172,7 @@ export default function CardThumbnailPreview({ ...props }) {
               image={cardthumbnailImage}
               type={"thumbnail"}
               title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
+              description={null}
               target={null}
               onClick={null}
               price={"£9.99"}
@@ -190,7 +190,7 @@ export default function CardThumbnailPreview({ ...props }) {
               image={cardthumbnailImage}
               type={"thumbnail"}
               title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
+              description={null}
               target={null}
               onClick={null}
               price={"£9.99"}

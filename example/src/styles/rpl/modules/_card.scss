@@ -10,21 +10,8 @@
   //
 }
 
-// .card__image--block {
-//   img {
-//     height: 200px;
-//   }
-// }
-//
-// .card__image--inline {
-//   img {
-//     height: 100px;
-//   }
-// }
-
 .card__contents-wrapper {
   position: relative;
-  // height: 100px;
 }
 
 .card__title {
@@ -40,6 +27,7 @@
 .card__price {
   @extend .f6;
   @extend .mb2;
+  @extend .pr2;
   @extend .db;
 }
 
@@ -50,14 +38,11 @@
 .card__discount-price {
   @extend .f6;
   @extend .mb2;
-  @extend .dib;
-  @extend .pv1;
-  @extend .ph2;
-  background: red;
-  color: palette(white);
+  @extend .pr2;
+  @extend .db;
 }
 
 
 .card__button-wrapper {
-  // height: 50px;
+  //
 }

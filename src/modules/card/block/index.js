@@ -20,34 +20,31 @@ export default function CardBlock(props) {
   const hasOnClick = onClick ? { onClick } : "";
 
   const renderContents = () => {
-    if (price || discountPrice) {
-      return (
-        <div className="flex  flex-wrap  align-start  card__contents-wrapper">
-          <div className="col-24  col-19-md">
-            {title && <div className="card__title">{title}</div>}
-            {description && (
-              <div className="card__description">{description}</div>
-            )}
-          </div>
-          <div className="col-24  col-5-md  flex  flex-wrap  justify-start  justify-end-md">
-            {price && (
-              <span
-                className={`card__price  ${discountPrice &&
-                  "card__price--has-discount"}  tar  w-100`}
-              >
-                {price}
-              </span>
-            )}
-            {discountPrice && (
-              <span className="card__discount-price">{discountPrice}</span>
-            )}
-          </div>
-        </div>
-      );
+    const priceBlock = () => {
+      if (price || discountPrice) {
+        return  (
+            <div className="col-24  flex  pt2">
+              {price && (
+                <span
+                  className={`card__price  ${discountPrice &&
+                    "card__price--has-discount"}`}
+                >
+                  {price}
+                </span>
+              )}
+              {discountPrice && (
+                <span className="card__discount-price">{discountPrice}</span>
+              )}
+            </div>
+        );
+      }
+
+      return false;
     }
 
     return (
       <div className="flex  flex-wrap  align-start  card__contents-wrapper">
+        {priceBlock && priceBlock()}
         <div className="col-24">
           {title && <div className="card__title">{title}</div>}
           {description && (

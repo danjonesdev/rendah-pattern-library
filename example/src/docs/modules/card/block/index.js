@@ -85,8 +85,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -104,8 +102,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -123,8 +119,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -142,8 +136,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
               onClick={null}
               price={null}
               discountPrice={null}
@@ -163,46 +155,6 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-
-
-              onClick={null}
-              price={'£9.99'}
-              discountPrice={'null'}
-              button={cardBlockButton}
-            />
-          </div>
-
-          <div
-            className={
-              "col-24  col-6-md  flex  justify-start  align-start  pa3"
-            }
-          >
-            <Card
-              image={cardblockImage}
-              type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-
-
-              onClick={null}
-              price={'£9.99'}
-              discountPrice={null}
-              button={cardBlockButton}
-            />
-          </div>
-
-          <div
-            className={
-              "col-24  col-6-md  flex  justify-start  align-start  pa3"
-            }
-          >
-            <Card
-              image={cardblockImage}
-              type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-
-
               onClick={null}
               price={'£9.99'}
               discountPrice={'£4.99'}
@@ -220,8 +172,40 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
+              onClick={null}
+              price={'£9.99'}
+              discountPrice={null}
+              button={cardBlockButton}
+            />
+          </div>
 
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
+            }
+          >
+            <Card
+              image={cardblockImage}
+              type={"block"}
+              title={cardBlockHeading}
+              description={cardBlockCopy}
+              onClick={null}
+              price={'£9.99'}
+              discountPrice={'£4.99'}
+              button={cardBlockButton}
+            />
+          </div>
 
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-start  align-start  pa3"
+            }
+          >
+            <Card
+              image={cardblockImage}
+              type={"block"}
+              title={cardBlockHeading}
+              description={cardBlockCopy}
               onClick={'£9.99'}
               price={null}
               discountPrice={'£4.99'}
