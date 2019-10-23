@@ -7,13 +7,10 @@ import propDocs from "../propDocs";
 export default function CardThumbnailPreview({ ...props }) {
   const cardthumbnailImage = (
     <Image
-      type={""}
       src={"https://via.placeholder.com/1000x1000"}
       placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
-      progressive={true}
-      objectFit={"cover"}
       height={80}
       onClick={null}
       withLinkProps={null}

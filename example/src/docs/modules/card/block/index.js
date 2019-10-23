@@ -7,13 +7,10 @@ import propDocs from "../propDocs";
 export default function CardBlockPreview({ ...props }) {
   const cardblockImage = (
     <Image
-      type={""}
       src={"https://via.placeholder.com/1000x1000"}
       placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
-      progressive={true}
-      objectFit={"cover"}
       height={250}
       onClick={null}
       withLinkProps={null}
@@ -156,8 +153,8 @@ export default function CardBlockPreview({ ...props }) {
               title={cardBlockHeading}
               description={cardBlockCopy}
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -173,7 +170,7 @@ export default function CardBlockPreview({ ...props }) {
               title={cardBlockHeading}
               description={cardBlockCopy}
               onClick={null}
-              price={'£9.99'}
+              price={"£9.99"}
               discountPrice={null}
               button={cardBlockButton}
             />
@@ -190,8 +187,8 @@ export default function CardBlockPreview({ ...props }) {
               title={cardBlockHeading}
               description={cardBlockCopy}
               onClick={null}
-              price={'£9.99'}
-              discountPrice={'£4.99'}
+              price={"£9.99"}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
@@ -206,9 +203,9 @@ export default function CardBlockPreview({ ...props }) {
               type={"block"}
               title={cardBlockHeading}
               description={cardBlockCopy}
-              onClick={'£9.99'}
+              onClick={"£9.99"}
               price={null}
-              discountPrice={'£4.99'}
+              discountPrice={"£4.99"}
               button={cardBlockButton}
             />
           </div>
