@@ -1,25 +1,16 @@
 .hero {
   width: 100%;
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  overflow: hidden;
+  height: 500px;
 
-.hero.small {
-  height: 250px;
-  img {
-    height: 250px;
-    
+  .image__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
   }
-}
-
-.hero.medium {
-  height: 350px;
-}
-
-.hero.large {
-  height: 450px;
 }
 
 .hero__dialog {
@@ -28,20 +19,20 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
   @extend .pa4;
 }
 
 .hero__title {
   @extend .f2;
-@extend .mb3;
+  @extend .mb3;
 }
 
 .hero__description {
   @extend .f5;
   @extend .mb3;
-
 }
 
 .hero__button {
-//
+  //
 }
