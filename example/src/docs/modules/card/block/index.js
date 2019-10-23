@@ -42,23 +42,19 @@ export default function CardBlockPreview({ ...props }) {
 
   const cardButton = (
     <Button
-      htmlEntity={"a"}
-      text={"Click here"}
-      icon={"arrow-right"}
+      /* Options */
+      type={"secondary"}
+      size={"medium"}
+      text={"Secondary"}
       color={"black"}
-      type={"primary"}
       fluid={false}
-      onClick={null}
-      size={"small"}
+      icon={"arrow-right"}
+      iconFloat={null}
       inverted={false}
       loading={false}
       disabled={false}
-      iconFloat={null}
-      withLinkProps={{
-        type: "internal",
-        url: "/hello",
-        target: "_blank"
-      }}
+      onClick={null}
+      withLinkProps={null}
     />
   );
 

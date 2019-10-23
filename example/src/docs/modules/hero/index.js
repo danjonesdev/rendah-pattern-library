@@ -40,21 +40,19 @@ export default function HeroPreview({ ...props }) {
 
   const heroButton = (
     <Button
-      htmlEntity={"a"}
-      text={"Click here"}
-      icon={"arrow-right"}
-      color={"black"}
+      /* Options */
       type={"secondary"}
+      size={"medium"}
+      text={"Secondary"}
+      color={"black"}
       fluid={false}
-      onClick={null}
-      size={"small"}
+      icon={"arrow-right"}
+      iconFloat={null}
       inverted={false}
       loading={false}
       disabled={false}
-      iconFloat={null}
-      href={"/"}
-      target={"_blank"}
-      role={"button"}
+      onClick={null}
+      withLinkProps={null}
     />
   );
 

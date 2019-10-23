@@ -1,352 +1,378 @@
-import React from 'react'
-import { Button } from 'rendah-pattern-library'
+import React from "react";
+import { Button } from "rendah-pattern-library";
 
-import PreviewWrapper from '../../../components/preview-wrapper'
-import propDocs from './propDocs'
+import PreviewWrapper from "../../../components/preview-wrapper";
+import propDocs from "./propDocs";
 
 export default function ButtonPreview({ ...props }) {
   return (
     <React.Fragment>
       <PreviewWrapper
-        title={'Button'}
-        description={'These are the button variations'}
+        title={"Button"}
+        description={"These are the button variations"}
         propDocs={propDocs}
       />
 
-      <div className='container  mla  mra'>
-        <div className={'flex  flex-wrap  justify-center'}>
+      <div className="container  mla  mra">
+        <div className={"flex  flex-wrap  justify-center"}>
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Primary'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"medium"}
+              text={"Primary"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              icon={null}
+              iconFloat={null}
               inverted={false}
               loading={false}
               disabled={false}
-              withLinkProps={{
-                type: 'internal',
-                url: '/hello',
-                target: '_blank'
-              }}
-            />
-          </div>
-
-          <div
-            className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
-            }
-          >
-            <Button
-              text={'Inverted'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
-              fluid={false}
               onClick={null}
-              size={'medium'}
-              inverted={true}
-              loading={false}
-              disabled={false}
-              iconFloat={null}
               withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Loading'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"medium"}
+              text={"Inverted"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
-              inverted={false}
-              loading={true}
-              disabled={false}
+              icon={null}
               iconFloat={null}
+              inverted={true}
+              loading={false}
+              disabled={false}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Disabled'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"medium"}
+              text={"Loading"}
+              color={"black"}
               fluid={false}
+              icon={null}
+              iconFloat={null}
+              loading={true}
+              disabled={false}
+              inverted={false}
               onClick={null}
-              size={'medium'}
+              withLinkProps={null}
+            />
+          </div>
+
+          <div
+            className={
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
+            }
+          >
+            <Button
+              /* Options */
+              type={"primary"}
+              size={"medium"}
+              text={"Disabled"}
+              color={"black"}
+              fluid={false}
+              icon={null}
+              iconFloat={null}
               inverted={true}
               loading={false}
               disabled={true}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
         </div>
 
-        <div className={'flex  flex-wrap  justify-center'}>
+        <div className={"flex  flex-wrap  justify-center"}>
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Primary Small'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"small"}
+              text={"Primary Small"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'small'}
+              icon={null}
+              iconFloat={null}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Primary Medium'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"medium"}
+              text={"Primary Medium"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              icon={null}
+              iconFloat={null}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Primary Large'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"large"}
+              text={"Primary Large"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'large'}
+              icon={null}
+              iconFloat={null}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Primary X-Large'}
-              icon={null}
-              color={'black'}
-              type={'primary'}
+              /* Options */
+              type={"primary"}
+              size={"x-large"}
+              text={"Primary X-Large"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'x-large'}
+              icon={null}
+              iconFloat={null}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
         </div>
 
-        <div className={'flex  flex-wrap  justify-between'}>
+        <div className={"flex  flex-wrap  justify-between"}>
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Secondary'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"medium"}
+              text={"Secondary"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              icon={"arrow-right"}
+              iconFloat={null}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Inverted'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"medium"}
+              text={"Inverted"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              icon={"arrow-right"}
+              iconFloat={null}
               inverted={true}
               loading={false}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Loading'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"medium"}
+              text={"Loading"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              icon={"arrow-right"}
+              iconFloat={null}
               inverted={false}
               loading={true}
               disabled={false}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Disabled'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"medium"}
+              text={"Disabled"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              icon={"arrow-right"}
+              iconFloat={null}
               inverted={true}
               loading={false}
               disabled={true}
-              iconFloat={null}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
         </div>
 
-        <div className={'flex  flex-wrap  justify-between'}>
+        <div className={"flex  flex-wrap  justify-between"}>
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Secondary Small'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"small"}
+              text={"Secondary Small"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'small'}
-              inverted={false}
-              loading={false}
-              disabled={false}
+              icon={"arrow-right"}
               iconFloat={null}
+              inverted={false}
+              loading={false}
+              disabled={false}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Secondary Medium'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"medium"}
+              text={"Secondary Medium"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'medium'}
+              iconFloat={"left"}
+              icon={"arrow-right"}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={'left'}
+              onClick={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Secondary Large'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"large"}
+              text={"Secondary Large"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'large'}
+              icon={"arrow-right"}
+              iconFloat={"right"}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={'right'}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
 
           <div
             className={
-              'col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4'
+              "col-24  col-6-md  flex  justify-center  justify-start-md  align-end  mb4"
             }
           >
             <Button
-              text={'Secondary X-Large'}
-              icon={'arrow-right'}
-              color={'black'}
-              type={'secondary'}
+              /* Options */
+              type={"secondary"}
+              size={"x-large"}
+              text={"Secondary X-Large"}
+              color={"black"}
               fluid={false}
-              onClick={null}
-              size={'x-large'}
+              icon={"arrow-right"}
+              iconFloat={"left"}
               inverted={false}
               loading={false}
               disabled={false}
-              iconFloat={'left'}
+              onClick={null}
+              withLinkProps={null}
             />
           </div>
         </div>
       </div>
     </React.Fragment>
-  )
+  );
 }
