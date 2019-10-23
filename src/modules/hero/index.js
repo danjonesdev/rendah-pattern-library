@@ -6,7 +6,16 @@ import ProgressiveImage from "react-progressive-image";
  */
 
 export default function Hero(props) {
-  const { height, image, title, description, color, button } = props;
+  const {
+    /* Options */
+    color,
+    height,
+    /* Children */
+    image,
+    title,
+    description,
+    button
+  } = props;
 
   const styles = {
     height: `${height}px`

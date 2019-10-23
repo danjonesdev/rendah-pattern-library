@@ -5,7 +5,7 @@ import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
 
 export default function CardBlockPreview({ ...props }) {
-  const cardblockImage = (
+  const cardImage = (
     <Image
       src={"https://via.placeholder.com/1000x1000"}
       placeholder={"https://via.placeholder.com/500x500"}
@@ -17,7 +17,7 @@ export default function CardBlockPreview({ ...props }) {
     />
   );
 
-  const cardBlockHeading = (
+  const cardHeading = (
     <Heading
       htmlEntity={"h2"}
       text={
@@ -29,7 +29,7 @@ export default function CardBlockPreview({ ...props }) {
     />
   );
 
-  const cardBlockCopy = (
+  const cardCopy = (
     <Copy
       text={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
@@ -40,7 +40,7 @@ export default function CardBlockPreview({ ...props }) {
     />
   );
 
-  const cardBlockButton = (
+  const cardButton = (
     <Button
       htmlEntity={"a"}
       text={"Click here"}
@@ -78,14 +78,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-              onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
 
@@ -95,14 +97,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-              onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
 
@@ -112,14 +116,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-              onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
 
@@ -129,14 +135,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-              onClick={null}
               price={null}
               discountPrice={null}
-              button={cardBlockButton}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
         </div>
@@ -148,14 +156,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={"£4.99"}
-              button={cardBlockButton}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
 
@@ -165,14 +175,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={null}
-              button={cardBlockButton}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
 
@@ -182,14 +194,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={"£4.99"}
-              button={cardBlockButton}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
 
@@ -199,14 +213,16 @@ export default function CardBlockPreview({ ...props }) {
             }
           >
             <Card
-              image={cardblockImage}
+              /* Options */
               type={"block"}
-              title={cardBlockHeading}
-              description={cardBlockCopy}
-              onClick={"£9.99"}
-              price={null}
-              discountPrice={"£4.99"}
-              button={cardBlockButton}
+              price={"9.99"}
+              discountPrice={"4.99"}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
+              button={cardButton}
             />
           </div>
         </div>

@@ -1,23 +1,23 @@
 import React from "react";
-import { Card, Image, Heading, Copy, Button } from "rendah-pattern-library";
+import { Card, Image, Heading, Copy } from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
 
 export default function CardThumbnailPreview({ ...props }) {
-  const cardthumbnailImage = (
+  const cardImage = (
     <Image
       src={"https://via.placeholder.com/1000x1000"}
       placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
-      height={80}
+      height={100}
       onClick={null}
       withLinkProps={null}
     />
   );
 
-  const cardthumbnailHeading = (
+  const cardHeading = (
     <Heading
       htmlEntity={"h2"}
       text={
@@ -25,11 +25,11 @@ export default function CardThumbnailPreview({ ...props }) {
       }
       color={"black"}
       size={"small"}
-      truncate={2}
+      truncate={1}
     />
   );
 
-  const cardthumbnailCopy = (
+  const cardCopy = (
     <Copy
       text={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
@@ -56,14 +56,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
-              target={null}
-              onClick={null}
               price={null}
               discountPrice={null}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -74,14 +75,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
-              target={null}
-              onClick={null}
               price={null}
               discountPrice={null}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -92,14 +94,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
-              target={null}
-              onClick={null}
               price={null}
               discountPrice={null}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -110,14 +113,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={cardthumbnailCopy}
-              target={null}
-              onClick={null}
               price={null}
               discountPrice={null}
+              onClick={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -130,14 +134,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={null}
-              target={null}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -148,14 +153,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={null}
-              target={null}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={null}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -166,14 +172,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={null}
-              target={null}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={"£4.99"}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>
@@ -184,14 +191,15 @@ export default function CardThumbnailPreview({ ...props }) {
             }
           >
             <Card
-              image={cardthumbnailImage}
+              /* Options */
               type={"thumbnail"}
-              title={cardthumbnailHeading}
-              description={null}
-              target={null}
+              price={"9.99"}
+              discountPrice={"4.99"}
               onClick={null}
-              price={"£9.99"}
-              discountPrice={"£4.99"}
+              /* Children */
+              image={cardImage}
+              title={cardHeading}
+              description={cardCopy}
               button={null}
             />
           </div>

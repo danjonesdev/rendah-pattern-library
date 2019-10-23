@@ -6,14 +6,15 @@ import React from "react";
 
 export default function CardThumbnail(props) {
   const {
+    /* Options */
     type,
+    price,
+    discountPrice,
+    onClick,
+    /* Children */
     image,
     title,
     description,
-    target,
-    onClick,
-    price,
-    discountPrice,
     button
   } = props;
 
@@ -22,25 +23,25 @@ export default function CardThumbnail(props) {
   const renderContents = () => {
     const priceBlock = () => {
       if (price || discountPrice) {
-        return  (
-            <div className="col-24  flex">
-              {price && (
-                <span
-                  className={`card__price  ${discountPrice &&
-                    "card__price--has-discount"}`}
-                >
-                  {price}
-                </span>
-              )}
-              {discountPrice && (
-                <span className="card__discount-price">{discountPrice}</span>
-              )}
-            </div>
+        return (
+          <div className="col-24  flex">
+            {price && (
+              <span
+                className={`card__price  ${discountPrice &&
+                  "card__price--has-discount"}`}
+              >
+                {price}
+              </span>
+            )}
+            {discountPrice && (
+              <span className="card__discount-price">{discountPrice}</span>
+            )}
+          </div>
         );
       }
 
       return false;
-    }
+    };
 
     return (
       <div className="flex  flex-wrap  align-start  card__contents-wrapper">

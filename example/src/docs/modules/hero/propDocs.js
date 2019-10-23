@@ -1,26 +1,14 @@
 export default [
   {
-    name: "type",
+    name: "color",
     default: "",
     type: "string",
     description: ""
   },
   {
-    name: "price",
+    name: "height",
     default: "",
-    type: "string",
-    description: ""
-  },
-  {
-    name: "discountPrice",
-    default: "",
-    type: "string",
-    description: ""
-  },
-  {
-    name: "onClick",
-    default: "",
-    type: "func",
+    type: "integer",
     description: ""
   },
   {

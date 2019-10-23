@@ -7,13 +7,15 @@ import ProgressiveImage from "react-progressive-image";
 
 export default function CardBlock(props) {
   const {
+    /* Options */
     type,
+    price,
+    discountPrice,
+    onClick,
+    /* Children */
     image,
     title,
     description,
-    onClick,
-    price,
-    discountPrice,
     button
   } = props;
 
