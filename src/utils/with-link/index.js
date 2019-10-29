@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 // const Link = 'Link'
 
 /**
@@ -7,31 +7,33 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
  */
 
 export default function WithLink(props) {
-  const { withLinkProps } = props
+  const { withLinkProps } = props;
 
-  if (!withLinkProps) return <span {...props}>{props.children}</span>
+  if (!withLinkProps) return <div {...props}>{props.children}</div>;
+
+  console.log("withLinkProps", withLinkProps);
 
   switch (withLinkProps.type) {
-    case 'internal':
+    case "internal":
       return (
         <Router>
           <Link target={withLinkProps.target} to={withLinkProps.url} {...props}>
             {props.children}
           </Link>
         </Router>
-      )
-      break
-    case 'external':
+      );
+      break;
+    case "external":
       return (
         <a target={withLinkProps.target} href={withLinkProps.url} {...props}>
           {props.children}
         </a>
-      )
-      break
-    case 'none':
-      return <span {...props}>{props.children}</span>
-      break
+      );
+      break;
+    case "none":
+      return <div {...props}>{props.children}</div>;
+      break;
     default:
-      return <span {...props}>{props.children}</span>
+      return <div {...props}>{props.children}</div>;
   }
 }

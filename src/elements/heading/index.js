@@ -1,17 +1,26 @@
 import React from "react";
 import TruncateMarkup from "react-truncate-markup";
+import WithLink from "../../utils/with-link";
 
 /**
  * A Heading.
  */
 
 export default function Heading(props) {
-  const { text, color, onClick, htmlEntity, size, iconFloat, truncate } = props;
+  const {
+    htmlEntity,
+    text,
+    color,
+    size,
+    truncate,
+    onClick,
+    withLinkProps
+  } = props;
 
+  const hasOnClick = onClick ? { onClick } : "";
   const ElementType = htmlEntity || "h1";
   const hasTruncate = truncate ? true : false;
   const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
-  const hasOnClick = onClick ? { onClick } : "";
 
   let lineHeight;
   switch (size) {
@@ -42,9 +51,11 @@ export default function Heading(props) {
       className={`heading ${size} ${color}`}
       style={styles}
     >
-      <ElementTypeInner lines={truncate}>
-        <span>{text}</span>
-      </ElementTypeInner>
+      <WithLink withLinkProps={withLinkProps}>
+        <ElementTypeInner lines={truncate}>
+          <span>{text}</span>
+        </ElementTypeInner>
+      </WithLink>
     </ElementType>
   );
 }

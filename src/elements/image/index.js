@@ -1,5 +1,6 @@
 import React from "react";
 import ProgressiveImage from "../../utils/progressive-image";
+import WithLink from "../../utils/with-link";
 // import { Parallax, Background } from "react-parallax";
 
 /**
@@ -25,13 +26,19 @@ export default function Image(props) {
   };
 
   return (
-    <figure className="image__wrapper" style={styles}>
-      <ElementType
-        src={src}
-        placeholder={placeholder}
-        height={height}
-        alt={alt}
-      ></ElementType>
+    <figure>
+      <WithLink
+        className="image__wrapper"
+        style={styles}
+        withLinkProps={withLinkProps}
+      >
+        <ElementType
+          src={src}
+          placeholder={placeholder}
+          height={height}
+          alt={alt}
+        ></ElementType>
+      </WithLink>
 
       {figcaption && (
         <figcaption className="black  f6  t-secondary  tac  mla  mra  pt2">

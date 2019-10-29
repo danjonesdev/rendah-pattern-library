@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "rendah-pattern-library";
+import { Icon, Heading } from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
@@ -14,10 +14,29 @@ export default function IconPreview({ ...props }) {
       />
 
       <div className="container  mla  mra">
-        <div className={"flex  flex-wrap"}>
+        <Heading
+          htmlEntity={"h2"}
+          text={"Functional"}
+          color={"black"}
+          size={"medium"}
+          truncate={null}
+        />
+
+        <div className={"flex  flex-wrap  pt4"}>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
             <Icon icon={"arrow-right"} color={"#000000"} />
           </div>
+        </div>
+
+        <Heading
+          htmlEntity={"h2"}
+          text={"Social"}
+          color={"black"}
+          size={"medium"}
+          truncate={null}
+        />
+
+        <div className={"flex  flex-wrap  pt4"}>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
             <Icon icon={"facebook"} color={"#000000"} />
           </div>
