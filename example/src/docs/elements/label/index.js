@@ -56,7 +56,7 @@ export default function LabelPreview(props) {
           <div className="col-12  col-4-md">
             <Label
               /* Options */
-              type={"salePrice"}
+              type={"sale-price"}
               text={"£4.99"}
               color={"secondary-color"}
               backgroundColor={"white"}

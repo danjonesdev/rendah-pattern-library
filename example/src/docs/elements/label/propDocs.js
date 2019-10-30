@@ -4,7 +4,7 @@ export default [
     default: "",
     type: "enum",
     description:
-      "<code>date</code>, <code>author</code>, <code>price</code>, <code>salePrice</code>, <code>category</code>"
+      "<code>date</code>, <code>author</code>, <code>price</code>, <code>sale-price</code>, <code>category</code>"
   },
   {
     name: "text",

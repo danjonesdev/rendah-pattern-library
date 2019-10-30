@@ -37,7 +37,7 @@ export default function CardBlock(props) {
     };
 
     return (
-      <div className="flex  flex-wrap  align-start  card__contents-wrapper">
+      <div className="flex  flex-wrap  align-start  pt2  card__contents-wrapper">
         {labelBlock && renderLabels()}
         <div className="col-24">
           {title && <div className="card__title">{title}</div>}
