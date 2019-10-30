@@ -30,6 +30,12 @@ export default [
     description: "Props per <code>Image</code> component"
   },
   {
+    name: "labelBlock",
+    default: "",
+    type: "array[Component]",
+    description: "Props per <code>Label</code> component"
+  },
+  {
     name: "title",
     default: "",
     type: "Component",

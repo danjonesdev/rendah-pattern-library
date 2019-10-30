@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, Image, Heading, Copy, Button } from "rendah-pattern-library";
+import {
+  Card,
+  Image,
+  Label,
+  Heading,
+  Copy,
+  Button
+} from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../../components/preview-wrapper";
 import propDocs from "../propDocs";
@@ -13,6 +20,19 @@ export default function CardBlockPreview({ ...props }) {
       alt={"This is the alt text."}
       figcaption={null}
       height={250}
+      onClick={null}
+      /* Children */
+      withLinkProps={null}
+    />
+  );
+
+  const cardLabel = (
+    <Label
+      /* Options */
+      type={""}
+      text={"label"}
+      color={"black"}
+      backgroundColor={"white"}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -83,11 +103,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={null}
-              discountPrice={null}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -102,11 +121,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={null}
-              discountPrice={null}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -121,11 +139,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={null}
-              discountPrice={null}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -140,11 +157,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={null}
-              discountPrice={null}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -161,11 +177,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={"9.99"}
-              discountPrice={"4.99"}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -180,11 +195,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={"9.99"}
-              discountPrice={"4.99"}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -199,11 +213,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={"9.99"}
-              discountPrice={"4.99"}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}
@@ -218,11 +231,10 @@ export default function CardBlockPreview({ ...props }) {
             <Card
               /* Options */
               type={"block"}
-              price={"9.99"}
-              discountPrice={"4.99"}
               onClick={null}
               /* Children */
               image={cardImage}
+              labelBlock={[cardLabel, cardLabel]}
               title={cardHeading}
               description={cardCopy}
               button={cardButton}

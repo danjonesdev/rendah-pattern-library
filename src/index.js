@@ -8,6 +8,7 @@ export Icon from "./elements/icon";
 export Heading from "./elements/heading";
 export Copy from "./elements/copy";
 export Image from "./elements/image";
+export Label from "./elements/label";
 
 // utils
 export withLink from "./utils/with-link";

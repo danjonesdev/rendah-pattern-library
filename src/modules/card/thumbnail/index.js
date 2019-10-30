@@ -8,11 +8,10 @@ export default function CardThumbnail(props) {
   const {
     /* Options */
     type,
-    price,
-    discountPrice,
     onClick,
     /* Children */
     image,
+    labelBlock,
     title,
     description,
     button
@@ -21,31 +20,23 @@ export default function CardThumbnail(props) {
   const hasOnClick = onClick ? { onClick } : "";
 
   const renderContents = () => {
-    const priceBlock = () => {
-      if (price || discountPrice) {
-        return (
-          <div className="col-24  flex">
-            {price && (
-              <span
-                className={`card__price  ${discountPrice &&
-                  "card__price--has-discount"}`}
-              >
-                {price}
-              </span>
-            )}
-            {discountPrice && (
-              <span className="card__discount-price">{discountPrice}</span>
-            )}
-          </div>
-        );
-      }
+    const renderLabels = () => {
+      if (!labelBlock.length) return false;
 
-      return false;
+      const listItems = labelBlock.map(label => (
+        <span className="card__label" key={"key"}>
+          {label}
+        </span>
+      ));
+
+      return (
+        <div className="flex  flex-wrap  card__label-block">{listItems}</div>
+      );
     };
 
     return (
       <div className="flex  flex-wrap  align-start  card__contents-wrapper">
-        {priceBlock && priceBlock()}
+        {labelBlock && renderLabels()}
         <div className="col-24">
           {title && <div className="card__title">{title}</div>}
           {description && (
