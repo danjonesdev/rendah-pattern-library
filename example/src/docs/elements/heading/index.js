@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Heading } from "rendah-pattern-library";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
