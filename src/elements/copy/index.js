@@ -6,7 +6,15 @@ import TruncateMarkup from "react-truncate-markup";
  */
 
 export default function Copy(props) {
-  const { text, color, onClick, size, iconFloat, truncate } = props;
+  const {
+    /* Options */
+    text,
+    color,
+    onClick,
+    size,
+    iconFloat,
+    truncate
+  } = props;
 
   const hasTruncate = truncate ? true : false;
   const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;

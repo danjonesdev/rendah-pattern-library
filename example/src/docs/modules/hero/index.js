@@ -7,28 +7,34 @@ import propDocs from "./propDocs";
 export default function HeroPreview({ ...props }) {
   const heroImage = (
     <Image
+      /* Options */
       src={"https://via.placeholder.com/1000x3000"}
       placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
       height={250}
       onClick={null}
+      /* Children */
       withLinkProps={null}
     />
   );
 
   const heroHeading = (
     <Heading
+      /* Options */
       htmlEntity={"h1"}
       text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
       color={"black"}
       size={"large"}
       truncate={1}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
   const heroCopy = (
     <Copy
+      /* Options */
       text={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta."
       }
@@ -52,6 +58,7 @@ export default function HeroPreview({ ...props }) {
       loading={false}
       disabled={false}
       onClick={null}
+      /* Children */
       withLinkProps={null}
     />
   );

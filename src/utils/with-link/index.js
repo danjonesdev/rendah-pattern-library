@@ -11,13 +11,16 @@ export default function WithLink(props) {
 
   if (!withLinkProps) return <div {...props}>{props.children}</div>;
 
-  console.log("withLinkProps", withLinkProps);
-
   switch (withLinkProps.type) {
     case "internal":
       return (
         <Router>
-          <Link target={withLinkProps.target} to={withLinkProps.url} {...props}>
+          <Link
+            className="link"
+            target={withLinkProps.target}
+            to={withLinkProps.url}
+            {...props}
+          >
             {props.children}
           </Link>
         </Router>
@@ -25,7 +28,12 @@ export default function WithLink(props) {
       break;
     case "external":
       return (
-        <a target={withLinkProps.target} href={withLinkProps.url} {...props}>
+        <a
+          className="link"
+          target={withLinkProps.target}
+          href={withLinkProps.url}
+          {...props}
+        >
           {props.children}
         </a>
       );

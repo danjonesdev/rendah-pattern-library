@@ -16,6 +16,7 @@ export default function CopyPreview(props) {
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  mb4"}>
           <Copy
+            /* Options */
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
             }
@@ -26,6 +27,7 @@ export default function CopyPreview(props) {
         </div>
         <div className={"flex  flex-wrap  mb4"}>
           <Copy
+            /* Options */
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
             }
@@ -36,6 +38,7 @@ export default function CopyPreview(props) {
         </div>
         <div className={"flex  flex-wrap  mb4"}>
           <Copy
+            /* Options */
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
             }
@@ -46,6 +49,7 @@ export default function CopyPreview(props) {
         </div>
         <div className={"flex  flex-wrap  mb4"}>
           <Copy
+            /* Options */
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
             }

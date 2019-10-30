@@ -5,6 +5,12 @@ import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function HeadingPreview(props) {
+  const withLinkProps = {
+    type: "internal",
+    url: "/",
+    target: "_top"
+  };
+
   return (
     <React.Fragment>
       <PreviewWrapper
@@ -16,46 +22,54 @@ export default function HeadingPreview(props) {
       <div className="container  mla  mra  relative">
         <div className={"flex  flex-wrap  mb4"}>
           <Heading
+            /* Options */
             htmlEntity={"h1"}
             text={"X-Large Heading"}
             color={"black"}
             size={"x-large"}
             truncate={null}
             onClick={null}
-            withLinkProps={null}
+            /* Children */
+            withLinkProps={withLinkProps}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
           <Heading
+            /* Options */
             htmlEntity={"h2"}
             text={"Large Heading"}
             color={"black"}
             size={"large"}
             truncate={null}
             onClick={null}
-            withLinkProps={null}
+            /* Children */
+            withLinkProps={withLinkProps}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
           <Heading
+            /* Options */
             htmlEntity={"h3"}
             text={"Medium Heading"}
             color={"black"}
             size={"medium"}
             truncate={null}
             onClick={null}
-            withLinkProps={null}
+            /* Children */
+            withLinkProps={withLinkProps}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
           <Heading
+            /* Options */
             htmlEntity={"h4"}
             text={"Small Heading"}
             color={"black"}
             size={"small"}
             truncate={null}
             onClick={null}
-            withLinkProps={null}
+            /* Children */
+            withLinkProps={withLinkProps}
           />
         </div>
       </div>

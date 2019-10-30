@@ -7,18 +7,21 @@ import propDocs from "../propDocs";
 export default function CardBlockPreview({ ...props }) {
   const cardImage = (
     <Image
+      /* Options */
       src={"https://via.placeholder.com/1000x1000"}
       placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
       height={250}
       onClick={null}
+      /* Children */
       withLinkProps={null}
     />
   );
 
   const cardHeading = (
     <Heading
+      /* Options */
       htmlEntity={"h2"}
       text={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet"
@@ -26,11 +29,14 @@ export default function CardBlockPreview({ ...props }) {
       color={"black"}
       size={"small"}
       truncate={2}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
   const cardCopy = (
     <Copy
+      /* Options */
       text={
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat diam vel tellus porta, quis facilisis odio laoreet. Sed accumsan aliquam odio."
       }
@@ -54,6 +60,7 @@ export default function CardBlockPreview({ ...props }) {
       loading={false}
       disabled={false}
       onClick={null}
+      /* Children */
       withLinkProps={null}
     />
   );

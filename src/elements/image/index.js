@@ -9,12 +9,14 @@ import WithLink from "../../utils/with-link";
 
 export default function Image(props) {
   const {
+    /* Options */
     src,
     placeholder,
     alt,
     figcaption,
     height,
     onClick,
+    /* Children */
     withLinkProps
   } = props;
 

@@ -15,11 +15,14 @@ export default function IconPreview({ ...props }) {
 
       <div className="container  mla  mra">
         <Heading
+          /* Options */
           htmlEntity={"h2"}
           text={"Functional"}
           color={"black"}
           size={"medium"}
           truncate={null}
+          /* Children */
+          withLinkProps={null}
         />
 
         <div className={"flex  flex-wrap  pt4"}>
@@ -29,11 +32,14 @@ export default function IconPreview({ ...props }) {
         </div>
 
         <Heading
+          /* Options */
           htmlEntity={"h2"}
           text={"Social"}
           color={"black"}
           size={"medium"}
           truncate={null}
+          /* Children */
+          withLinkProps={null}
         />
 
         <div className={"flex  flex-wrap  pt4"}>

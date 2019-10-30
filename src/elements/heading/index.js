@@ -8,12 +8,14 @@ import WithLink from "../../utils/with-link";
 
 export default function Heading(props) {
   const {
+    /* Options */
     htmlEntity,
     text,
     color,
     size,
     truncate,
     onClick,
+    /* Children */
     withLinkProps
   } = props;
 
@@ -46,16 +48,16 @@ export default function Heading(props) {
   };
 
   return (
-    <ElementType
-      {...hasOnClick}
-      className={`heading ${size} ${color}`}
-      style={styles}
-    >
-      <WithLink withLinkProps={withLinkProps}>
+    <WithLink withLinkProps={withLinkProps}>
+      <ElementType
+        {...hasOnClick}
+        className={`heading ${size} ${color}`}
+        style={styles}
+      >
         <ElementTypeInner lines={truncate}>
           <span>{text}</span>
         </ElementTypeInner>
-      </WithLink>
-    </ElementType>
+      </ElementType>
+    </WithLink>
   );
 }
