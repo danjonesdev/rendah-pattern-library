@@ -1,3 +1,5 @@
+import "../example/src/styles/rpl/_index.scss";
+
 // modules
 export Card from "./modules/card";
 export Hero from "./modules/hero";
