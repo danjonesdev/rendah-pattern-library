@@ -24,8 +24,6 @@ export default function ImagePreview(props) {
               figcaption={"This is a figcaption."}
               height={400}
               onClick={null}
-              /* Children */
-              withLinkProps={null}
             />
           </div>
         </div>

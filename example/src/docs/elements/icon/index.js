@@ -21,8 +21,6 @@ export default function IconPreview({ ...props }) {
           color={"black"}
           size={"medium"}
           truncate={null}
-          /* Children */
-          withLinkProps={null}
         />
 
         <div className={"flex  flex-wrap  pt4"}>
@@ -38,8 +36,6 @@ export default function IconPreview({ ...props }) {
           color={"black"}
           size={"medium"}
           truncate={null}
-          /* Children */
-          withLinkProps={null}
         />
 
         <div className={"flex  flex-wrap  pt4"}>

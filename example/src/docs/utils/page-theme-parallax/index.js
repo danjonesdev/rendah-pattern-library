@@ -23,7 +23,6 @@ export default function CardBlockPreview({ ...props }) {
       objectFit={"cover"}
       height={250}
       onClick={null}
-      withLinkProps={null}
     />
   );
 
@@ -64,11 +63,6 @@ export default function CardBlockPreview({ ...props }) {
       loading={false}
       disabled={false}
       iconFloat={null}
-      withLinkProps={{
-        type: "internal",
-        url: "/hello",
-        target: "_blank"
-      }}
     />
   );
 

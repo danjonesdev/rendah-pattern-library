@@ -15,7 +15,6 @@ import ImagePreview from "./docs/elements/image";
 import LabelPreview from "./docs/elements/label";
 
 // utils
-import WithLinkPreview from "./docs/utils/with-link";
 import PageThemeParallax from "./docs/utils/page-theme-parallax";
 
 export default function App() {
@@ -63,9 +62,6 @@ export default function App() {
             <h1 className="t-title  f5  bold  mb2">Utils</h1>
             <ul className="pa0  ma0  mb3  ls-none">
               <li className="mb1">
-                <Link to="/with-link">WithLink</Link>
-              </li>
-              <li className="mb1">
                 <Link to="/page-theme-parallax">PageThemeParallax</Link>
               </li>
             </ul>
@@ -87,7 +83,6 @@ export default function App() {
           <Route path="/label" component={LabelPreview} />
 
           {/* Utils */}
-          <Route path="/with-link" component={WithLinkPreview} />
           <Route path="/page-theme-parallax" component={PageThemeParallax} />
         </main>
       </div>

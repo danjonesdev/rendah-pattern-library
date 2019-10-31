@@ -34,11 +34,5 @@ export default [
     default: "",
     type: "func",
     description: ""
-  },
-  {
-    name: "withLinkProps",
-    default: "",
-    type: "Component",
-    description: ""
   }
 ];

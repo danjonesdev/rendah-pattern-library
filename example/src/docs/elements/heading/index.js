@@ -5,12 +5,6 @@ import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function HeadingPreview(props) {
-  const withLinkProps = {
-    type: "internal",
-    url: "/",
-    target: "_top"
-  };
-
   return (
     <React.Fragment>
       <PreviewWrapper
@@ -29,8 +23,6 @@ export default function HeadingPreview(props) {
             size={"x-large"}
             truncate={null}
             onClick={null}
-            /* Children */
-            withLinkProps={withLinkProps}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
@@ -42,8 +34,6 @@ export default function HeadingPreview(props) {
             size={"large"}
             truncate={null}
             onClick={null}
-            /* Children */
-            withLinkProps={withLinkProps}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
@@ -55,8 +45,6 @@ export default function HeadingPreview(props) {
             size={"medium"}
             truncate={null}
             onClick={null}
-            /* Children */
-            withLinkProps={withLinkProps}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
@@ -68,8 +56,6 @@ export default function HeadingPreview(props) {
             size={"small"}
             truncate={null}
             onClick={null}
-            /* Children */
-            withLinkProps={withLinkProps}
           />
         </div>
       </div>

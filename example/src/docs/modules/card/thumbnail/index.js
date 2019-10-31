@@ -14,8 +14,6 @@ export default function CardThumbnailPreview({ ...props }) {
       figcaption={null}
       height={100}
       onClick={null}
-      /* Children */
-      withLinkProps={null}
     />
   );
 
@@ -27,8 +25,6 @@ export default function CardThumbnailPreview({ ...props }) {
       color={"black"}
       backgroundColor={"white"}
       onClick={null}
-      /* Children */
-      withLinkProps={null}
     />
   );
 
@@ -42,8 +38,6 @@ export default function CardThumbnailPreview({ ...props }) {
       color={"black"}
       size={"small"}
       truncate={1}
-      /* Children */
-      withLinkProps={null}
     />
   );
 
