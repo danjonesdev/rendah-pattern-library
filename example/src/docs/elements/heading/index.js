@@ -31,6 +31,8 @@ export default function HeadingPreview(props) {
             size={"x-large"}
             truncate={null}
             onClick={null}
+            /* Children */
+            withLinkProps={null}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
@@ -42,6 +44,8 @@ export default function HeadingPreview(props) {
             size={"large"}
             truncate={null}
             onClick={null}
+            /* Children */
+            withLinkProps={null}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
@@ -53,6 +57,8 @@ export default function HeadingPreview(props) {
             size={"medium"}
             truncate={null}
             onClick={null}
+            /* Children */
+            withLinkProps={null}
           />
         </div>
         <div className={"flex  flex-wrap  mb4"}>
@@ -64,6 +70,8 @@ export default function HeadingPreview(props) {
             size={"small"}
             truncate={null}
             onClick={null}
+            /* Children */
+            withLinkProps={null}
           />
         </div>
       </div>

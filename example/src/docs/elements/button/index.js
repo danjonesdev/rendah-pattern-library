@@ -33,6 +33,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -54,6 +56,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -75,6 +79,8 @@ export default function ButtonPreview({ ...props }) {
               disabled={false}
               inverted={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -96,6 +102,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={true}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
         </div>
@@ -119,6 +127,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -140,6 +150,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -161,6 +173,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -182,6 +196,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
         </div>
@@ -205,6 +221,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -226,6 +244,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -247,6 +267,8 @@ export default function ButtonPreview({ ...props }) {
               loading={true}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -268,6 +290,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={true}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
         </div>
@@ -291,6 +315,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -312,6 +338,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -333,6 +361,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
 
@@ -354,6 +384,8 @@ export default function ButtonPreview({ ...props }) {
               loading={false}
               disabled={false}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
         </div>
