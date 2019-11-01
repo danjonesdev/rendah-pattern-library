@@ -1,10 +1,18 @@
 import React from "react";
 import { Heading } from "rendah-pattern-library";
+import { Link } from "react-router-dom";
 
 import PreviewWrapper from "../../../components/preview-wrapper";
 import propDocs from "./propDocs";
 
 export default function HeadingPreview(props) {
+  const withLinkProps = {
+    type: "internal",
+    url: "/",
+    target: "_top",
+    routerLink: Link
+  };
+
   return (
     <React.Fragment>
       <PreviewWrapper
