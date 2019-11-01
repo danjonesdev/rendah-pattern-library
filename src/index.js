@@ -3,6 +3,7 @@ import "./styles/_index.scss";
 // modules
 export Card from "./modules/card";
 export Hero from "./modules/hero";
+export Avatar from "./modules/avatar";
 
 // elements
 export Button from "./elements/button";

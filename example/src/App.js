@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import HeroPreview from "./docs/modules/hero";
 import CardBlockPreview from "./docs/modules/card/block";
 import CardThumbnailPreview from "./docs/modules/card/thumbnail";
+import AvatarPreview from "./docs/modules/avatar";
 
 // elements
 import ButtonPreview from "./docs/elements/button";
@@ -33,6 +34,9 @@ export default function App() {
               </li>
               <li className="mb1">
                 <Link to="/card/thumbnail">Card (Thumbnail)</Link>
+              </li>
+              <li className="mb1">
+                <Link to="/avatar">Avatar</Link>
               </li>
             </ul>
 
@@ -74,6 +78,7 @@ export default function App() {
           <Route exact path="/hero" component={HeroPreview} />
           <Route path="/card/block" component={CardBlockPreview} />
           <Route path="/card/thumbnail" component={CardThumbnailPreview} />
+          <Route path="/avatar" component={AvatarPreview} />
           {/* Elements */}
           <Route path="/button" component={ButtonPreview} />
           <Route path="/icon" component={IconPreview} />
