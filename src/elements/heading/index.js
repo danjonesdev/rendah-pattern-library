@@ -1,5 +1,6 @@
 import React from "react";
 import TruncateMarkup from "react-truncate-markup";
+import WithLink from "../../utils/with-link";
 
 /**
  * A Heading.
@@ -13,7 +14,9 @@ export default function Heading(props) {
     color,
     size,
     truncate,
-    onClick
+    onClick,
+    /* Children */
+    withLinkProps
   } = props;
 
   const hasOnClick = onClick ? { onClick } : "";
@@ -45,14 +48,16 @@ export default function Heading(props) {
   };
 
   return (
-    <ElementType
-      {...hasOnClick}
-      className={`heading ${size} ${color}`}
-      style={styles}
-    >
-      <ElementTypeInner lines={truncate}>
-        <span>{text}</span>
-      </ElementTypeInner>
-    </ElementType>
+    <WithLink withLinkProps={withLinkProps}>
+      <ElementType
+        {...hasOnClick}
+        className={`heading ${size} ${color}`}
+        style={styles}
+      >
+        <ElementTypeInner lines={truncate}>
+          <span>{text}</span>
+        </ElementTypeInner>
+      </ElementType>
+    </WithLink>
   );
 }

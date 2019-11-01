@@ -1,5 +1,6 @@
 import React from "react";
 import TruncateMarkup from "react-truncate-markup";
+import WithLink from "../../utils/with-link";
 
 /**
  * A Label.
@@ -13,16 +14,20 @@ export default function Label(props) {
     color,
     backgroundColor,
     onClick,
+    /* Children */
+    withLinkProps
   } = props;
 
   const hasOnClick = onClick ? { onClick } : "";
 
   return (
-    <span
-      {...hasOnClick}
-      className={`label ${type} ${color} bg-${backgroundColor}`}
-    >
-      {text}
-    </span>
+    <WithLink className="label__wrapper" withLinkProps={withLinkProps}>
+      <span
+        {...hasOnClick}
+        className={`label ${type} ${color} bg-${backgroundColor}`}
+      >
+        {text}
+      </span>
+    </WithLink>
   );
 }

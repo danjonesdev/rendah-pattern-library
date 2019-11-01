@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../icon";
+import WithLink from "../../utils/with-link";
 
 /**
  * A Button indicates a possible user action.
@@ -18,7 +19,9 @@ export default function Button(props) {
     inverted,
     loading,
     disabled,
-    onClick
+    onClick,
+    /* Children */
+    withLinkProps
   } = props;
 
   const isFluid = fluid ? "fluid" : "";
@@ -70,13 +73,14 @@ export default function Button(props) {
   };
 
   return (
-    <div
+    <WithLink
       {...isAriaLoading}
       {...hasOnClick}
       disabled={props.disabled}
       className={`button ${color} ${type} ${isFluid} ${isInverted} ${isLoading} ${isDisabled} ${size}`}
+      withLinkProps={withLinkProps}
     >
       {contents()}
-    </div>
+    </WithLink>
   );
 }
