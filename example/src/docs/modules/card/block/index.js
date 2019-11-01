@@ -21,6 +21,8 @@ export default function CardBlockPreview({ ...props }) {
       figcaption={null}
       height={250}
       onClick={null}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
@@ -32,6 +34,8 @@ export default function CardBlockPreview({ ...props }) {
       color={"black"}
       backgroundColor={"white"}
       onClick={null}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
@@ -45,6 +49,8 @@ export default function CardBlockPreview({ ...props }) {
       color={"black"}
       size={"small"}
       truncate={2}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
@@ -74,6 +80,8 @@ export default function CardBlockPreview({ ...props }) {
       loading={false}
       disabled={false}
       onClick={null}
+      /* Children */
+      withLinkProps={null}
     />
   );
 

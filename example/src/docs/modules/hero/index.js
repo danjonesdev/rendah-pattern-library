@@ -14,6 +14,8 @@ export default function HeroPreview({ ...props }) {
       figcaption={null}
       height={250}
       onClick={null}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
@@ -25,6 +27,8 @@ export default function HeroPreview({ ...props }) {
       color={"black"}
       size={"large"}
       truncate={1}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
@@ -54,6 +58,8 @@ export default function HeroPreview({ ...props }) {
       loading={false}
       disabled={false}
       onClick={null}
+      /* Children */
+      withLinkProps={null}
     />
   );
 
