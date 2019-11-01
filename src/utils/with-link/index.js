@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 // const Link = 'Link'
 
 /**
@@ -8,29 +7,29 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default function WithLink(props) {
   const { withLinkProps } = props;
-
   if (!withLinkProps) return <div {...props}>{props.children}</div>;
+  const RouterLink = withLinkProps.routerLink;
 
   switch (withLinkProps.type) {
     case "internal":
-      return (
-        <Router>
-          <Link
+      if (RouterLink) {
+        return (
+          <RouterLink
             className="link"
-            target={withLinkProps.target}
+            target={withLinkProps.target || "_top"}
             to={withLinkProps.url}
             {...props}
           >
             {props.children}
-          </Link>
-        </Router>
-      );
+          </RouterLink>
+        );
+      }
       break;
     case "external":
       return (
         <a
           className="link"
-          target={withLinkProps.target}
+          target={withLinkProps.target || "_top"}
           href={withLinkProps.url}
           {...props}
         >

@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressiveImage from "react-progressive-image";
 
 /**
  * A card displays site content in a manner similar to a playing card.

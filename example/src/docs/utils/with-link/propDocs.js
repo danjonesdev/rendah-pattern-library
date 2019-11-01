@@ -17,5 +17,11 @@ export default [
     default: "",
     type: "enum",
     description: "<code>_self</code>, <code>_blank</code>"
+  },
+  {
+    name: "routerLink",
+    default: "",
+    type: "enum",
+    description: "<code>Link</code> Component per react-router-dom, null"
   }
 ];
