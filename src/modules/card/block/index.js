@@ -49,7 +49,7 @@ export default function CardBlock(props) {
   };
 
   return (
-    <div className="card  card--small  flex  flex-wrap">
+    <div className="card  card--small">
       {image && <div className="col-24">{image}</div>}
       <div className="col-24  pt2">
         {renderContents()}
