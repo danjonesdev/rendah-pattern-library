@@ -1,11 +1,5 @@
 export default [
   {
-    name: "color",
-    default: "",
-    type: "string",
-    description: ""
-  },
-  {
     name: "height",
     default: "",
     type: "integer",

@@ -12,7 +12,7 @@ export default function AvatarPreview({ ...props }) {
       placeholder={"https://via.placeholder.com/500x500"}
       alt={"This is the alt text."}
       figcaption={null}
-      height={250}
+      height={100}
       onClick={null}
       /* Children */
       withLinkProps={null}
@@ -22,10 +22,10 @@ export default function AvatarPreview({ ...props }) {
   const heroHeading = (
     <Heading
       /* Options */
-      htmlEntity={"h1"}
-      text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+      htmlEntity={"p"}
+      text={"Author Name"}
       color={"black"}
-      size={"large"}
+      size={"medium"}
       truncate={1}
       /* Children */
       withLinkProps={null}
@@ -56,8 +56,7 @@ export default function AvatarPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Avatar
             /* Options */
-            color={"black"}
-            height={250}
+            height={100}
             /* Children */
             image={heroImage}
             title={heroHeading}
@@ -68,8 +67,7 @@ export default function AvatarPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Avatar
             /* Options */
-            color={"black"}
-            height={250}
+            height={100}
             /* Children */
             image={heroImage}
             title={heroHeading}
@@ -80,8 +78,7 @@ export default function AvatarPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Avatar
             /* Options */
-            color={"black"}
-            height={250}
+            height={100}
             /* Children */
             image={heroImage}
             title={heroHeading}

@@ -7,7 +7,6 @@ import React from "react";
 export default function Avatar(props) {
   const {
     /* Options */
-    color,
     height,
     /* Children */
     image,
@@ -20,14 +19,18 @@ export default function Avatar(props) {
   };
 
   return (
-    <article className="flex  flex-wrap  avatar" style={styles}>
-      <div className="col-4">{image}</div>
-      <div className="col-20  avatar__dialog">
-        {title && <div className={`hero__title  ${color}`}>{title}</div>}
+    <address className="avatar  flex  flex-wrap  avatar" style={styles}>
+      <div className="col-6  col-3-md  avatar__image">
+        {image}
+      </div>
+      <div className="col-18  col-21-md  avatar__dialog">
+        {title &&
+          <div className="avatar__title">{title}</div>
+        }
         {description && (
-          <p className={`hero__description  ${color}`}>{description}</p>
+          <p className="avatar__description">{description}</p>
         )}
       </div>
-    </article>
+    </address>
   );
 }

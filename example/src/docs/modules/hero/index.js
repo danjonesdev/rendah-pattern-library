@@ -75,7 +75,6 @@ export default function HeroPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Hero
             /* Options */
-            color={"black"}
             height={250}
             /* Children */
             image={heroImage}
@@ -88,7 +87,6 @@ export default function HeroPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Hero
             /* Options */
-            color={"black"}
             height={250}
             /* Children */
             image={heroImage}
@@ -101,7 +99,6 @@ export default function HeroPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Hero
             /* Options */
-            color={"black"}
             height={250}
             /* Children */
             image={heroImage}

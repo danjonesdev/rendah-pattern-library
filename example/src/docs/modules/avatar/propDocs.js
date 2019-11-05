@@ -1,11 +1,5 @@
 export default [
   {
-    name: "color",
-    default: "",
-    type: "string",
-    description: ""
-  },
-  {
     name: "height",
     default: "",
     type: "integer",
@@ -28,11 +22,5 @@ export default [
     default: "",
     type: "Component",
     description: "Props per <code>Copy</code> component"
-  },
-  {
-    name: "button",
-    default: "",
-    type: "Component",
-    description: "Props per <code>Button</code> component"
   }
 ];
