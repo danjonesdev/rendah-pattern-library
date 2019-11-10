@@ -17,7 +17,7 @@ export default function Copy(props) {
   } = props;
 
   const hasTruncate = truncate ? true : false;
-  const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
+  const ElementType = hasTruncate ? TruncateMarkup : React.Fragment;
   const hasOnClick = onClick ? { onClick } : "";
 
   let lineHeight;
@@ -45,9 +45,9 @@ export default function Copy(props) {
 
   return (
     <p {...hasOnClick} className={`copy ${size} ${color}`} style={styles}>
-      <TruncateMarkup lines={truncate}>
+      <ElementType lines={truncate}>
         <span>{text}</span>
-      </TruncateMarkup>
+      </ElementType>
     </p>
   );
 }
