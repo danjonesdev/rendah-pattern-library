@@ -1,6 +1,8 @@
 import React from "react";
 
 import ArrowRight from "./arrow-right";
+import Mail from "./mail";
+
 import Facebook from "./facebook";
 import Twitter from "./twitter";
 import Instagram from "./instagram";
@@ -14,6 +16,9 @@ export default function Icon(props) {
   switch (icon) {
     case "arrow-right":
       return <ArrowRight {...props} />;
+      break;
+    case "mail":
+      return <Mail {...props} />;
       break;
     case "facebook":
       return <Facebook {...props} />;

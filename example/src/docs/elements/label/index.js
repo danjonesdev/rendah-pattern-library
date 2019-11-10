@@ -25,6 +25,8 @@ export default function LabelPreview(props) {
               color={"black"}
               backgroundColor={"white"}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
           <div className="col-12  col-4-md">
@@ -35,6 +37,8 @@ export default function LabelPreview(props) {
               color={"black"}
               backgroundColor={"white"}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
           <div className="col-12  col-4-md">
@@ -45,6 +49,8 @@ export default function LabelPreview(props) {
               color={"black"}
               backgroundColor={"white"}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
           <div className="col-12  col-4-md">
@@ -55,6 +61,8 @@ export default function LabelPreview(props) {
               color={"secondary-color"}
               backgroundColor={"white"}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
           <div className="col-12  col-4-md">
@@ -65,6 +73,8 @@ export default function LabelPreview(props) {
               color={"white"}
               backgroundColor={"secondary-color"}
               onClick={null}
+              /* Children */
+              withLinkProps={null}
             />
           </div>
         </div>

@@ -21,13 +21,15 @@ export default function Label(props) {
   const hasOnClick = onClick ? { onClick } : "";
 
   return (
-    <WithLink className="label__wrapper" withLinkProps={withLinkProps}>
-      <span
-        {...hasOnClick}
-        className={`label ${type} ${color} bg-${backgroundColor}`}
-      >
-        {text}
-      </span>
-    </WithLink>
+    <span className="label__wrapper">
+      <WithLink withLinkProps={withLinkProps}>
+        <span
+          {...hasOnClick}
+          className={`label ${type} ${color} bg-${backgroundColor}`}
+        >
+          {text}
+        </span>
+      </WithLink>
+    </span>
   );
 }

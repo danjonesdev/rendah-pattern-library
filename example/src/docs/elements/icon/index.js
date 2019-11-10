@@ -27,6 +27,9 @@ export default function IconPreview({ ...props }) {
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
             <Icon icon={"arrow-right"} color={"#000000"} />
           </div>
+          <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
+            <Icon icon={"mail"} color={"#000000"} />
+          </div>
         </div>
 
         <Heading
