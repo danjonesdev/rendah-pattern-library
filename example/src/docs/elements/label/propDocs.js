@@ -29,5 +29,11 @@ export default [
     default: "",
     type: "func",
     description: ""
+  },
+  {
+    name: "withLinkProps",
+    default: "",
+    type: "Util",
+    description: "Props per <code>withLinkProps</code> util"
   }
 ];

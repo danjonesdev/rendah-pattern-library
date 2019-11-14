@@ -54,9 +54,11 @@ export default function Heading(props) {
         className={`heading ${size} ${color}`}
         style={styles}
       >
-        <ElementTypeInner lines={truncate}>
-          <span>{text}</span>
-        </ElementTypeInner>
+        <span className="dib">
+          <ElementTypeInner lines={truncate}>
+            <span>{text}</span>
+          </ElementTypeInner>
+        </span>
       </ElementType>
     </WithLink>
   );
