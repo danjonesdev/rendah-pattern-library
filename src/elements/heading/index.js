@@ -29,19 +29,19 @@ export default function Heading(props) {
   let lineHeight;
   switch (size) {
     case "small":
-      lineHeight = 20;
+      lineHeight = hasReveal ? 20 + 10 : 20;
       break;
     case "medium":
-      lineHeight = 24;
+      lineHeight = hasReveal ? 24 + 15 : 24;
       break;
     case "large":
-      lineHeight = 28;
+      lineHeight = hasReveal ? 38 + 15 : 38;
       break;
     case "x-large":
-      lineHeight = 32;
+      lineHeight = hasReveal ? 32 + 24 : 32;
       break;
     default:
-      lineHeight = 20;
+      lineHeight = hasReveal ? 20 + 10 : 20;
   }
 
   const styles = {
