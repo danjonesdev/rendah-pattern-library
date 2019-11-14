@@ -30,6 +30,7 @@ export default function HeadingPreview(props) {
             color={"black"}
             size={"x-large"}
             truncate={null}
+            reveal={null}
             onClick={null}
             /* Children */
             withLinkProps={null}
@@ -43,6 +44,7 @@ export default function HeadingPreview(props) {
             color={"black"}
             size={"large"}
             truncate={null}
+            reveal={true}
             onClick={null}
             /* Children */
             withLinkProps={null}
@@ -56,6 +58,7 @@ export default function HeadingPreview(props) {
             color={"black"}
             size={"medium"}
             truncate={null}
+            reveal={null}
             onClick={null}
             /* Children */
             withLinkProps={null}
@@ -69,6 +72,7 @@ export default function HeadingPreview(props) {
             color={"black"}
             size={"small"}
             truncate={null}
+            reveal={true}
             onClick={null}
             /* Children */
             withLinkProps={null}

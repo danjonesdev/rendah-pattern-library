@@ -30,6 +30,12 @@ export default [
     description: ""
   },
   {
+    name: "reveal",
+    default: "",
+    type: "integer",
+    description: ""
+  },
+  {
     name: "onClick",
     default: "",
     type: "func",

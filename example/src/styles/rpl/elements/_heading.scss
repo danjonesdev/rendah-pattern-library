@@ -1,6 +1,7 @@
 .heading {
   @extend .t-primary;
   @extend .bold;
+  @extend .dib;
 
   &.small {
     @extend .f5;
@@ -26,8 +27,8 @@
 }
 /* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 
-.reveal-text,
-.reveal-text::after {
+.heading--reveal,
+.heading--reveal::after {
   animation-delay: var(--animation-delay, 2s);
   animation-iteration-count: var(--iterations, 1);
   animation-duration: var(--duration, 800ms);
@@ -38,7 +39,7 @@
   padding-right: 10px;
 }
 
-.reveal-text {
+.heading--reveal {
   --animation-delay: var(--delay, 0);
   --animation-duration: var(--duration, 800ms);
   --animation-iterations: var(--iterations, 1);
@@ -46,7 +47,7 @@
   animation-name: clip-text;
 }
 
-.reveal-text::after {
+.heading--reveal::after {
   content: "";
   position: absolute;
   z-index: 999;

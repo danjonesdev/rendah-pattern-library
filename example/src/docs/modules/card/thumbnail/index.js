@@ -42,6 +42,7 @@ export default function CardThumbnailPreview({ ...props }) {
       color={"black"}
       size={"small"}
       truncate={1}
+      reveal={null}
       /* Children */
       withLinkProps={null}
     />

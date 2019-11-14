@@ -27,6 +27,7 @@ export default function HeroPreview({ ...props }) {
       color={"black"}
       size={"large"}
       truncate={1}
+      reveal={null}
       /* Children */
       withLinkProps={null}
     />

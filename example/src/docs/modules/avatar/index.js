@@ -27,6 +27,7 @@ export default function AvatarPreview({ ...props }) {
       color={"black"}
       size={"medium"}
       truncate={1}
+      reveal={null}
       /* Children */
       withLinkProps={null}
     />
