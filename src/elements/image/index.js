@@ -21,9 +21,10 @@ export default function Image(props) {
 
   const hasOnClick = onClick ? { onClick } : "";
   const ElementType = placeholder ? ProgressiveImage : "img";
+  const hasHeight = height ? `${height}px` : "auto";
 
   const styles = {
-    height: `${height}px`
+    height: hasHeight
   };
 
   return (

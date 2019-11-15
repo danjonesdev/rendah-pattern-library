@@ -1,11 +1,5 @@
 export default [
   {
-    name: "height",
-    default: "",
-    type: "integer",
-    description: ""
-  },
-  {
     name: "image",
     default: "",
     type: "Component",

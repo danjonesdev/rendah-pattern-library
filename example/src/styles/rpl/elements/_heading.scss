@@ -8,15 +8,18 @@
   }
 
   &.medium {
-    @extend .f4;
+    @extend .f5;
+    @extend .f4-md;
   }
 
   &.large {
-    @extend .f3;
+    @extend .f4;
+    @extend .f3-md;
   }
 
   &.x-large {
-    @extend .f2;
+    @extend .f3;
+    @extend .f2-md;
   }
 }
 

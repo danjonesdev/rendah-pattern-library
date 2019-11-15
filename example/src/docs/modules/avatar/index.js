@@ -57,7 +57,6 @@ export default function AvatarPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Avatar
             /* Options */
-            height={100}
             /* Children */
             image={heroImage}
             title={heroHeading}
@@ -68,7 +67,6 @@ export default function AvatarPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Avatar
             /* Options */
-            height={100}
             /* Children */
             image={heroImage}
             title={heroHeading}
@@ -79,7 +77,6 @@ export default function AvatarPreview({ ...props }) {
         <div className={"flex  flex-wrap  mb4"}>
           <Avatar
             /* Options */
-            height={100}
             /* Children */
             image={heroImage}
             title={heroHeading}
