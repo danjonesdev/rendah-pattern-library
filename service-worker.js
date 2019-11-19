@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rendah-pattern-library/precache-manifest.ffd985ac4de690cf1a28e0b637fd29ef.js"
+  "/rendah-pattern-library/precache-manifest.2c391d91ea2728f15b08385f8571dd27.js"
 );
 
 self.addEventListener('message', (event) => {
