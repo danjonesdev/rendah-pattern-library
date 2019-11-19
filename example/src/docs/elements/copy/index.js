@@ -7,11 +7,7 @@ import propDocs from "./propDocs";
 export default function CopyPreview(props) {
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Copy"}
-        description={"Copy only really varies in it's size"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Copy"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  mb4"}>

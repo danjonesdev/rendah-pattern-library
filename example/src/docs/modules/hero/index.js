@@ -66,11 +66,7 @@ export default function HeroPreview({ ...props }) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Hero"}
-        description={"These are the Hero variations"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Hero"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  mb4"}>

@@ -62,11 +62,7 @@ export default function CardThumbnailPreview({ ...props }) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Card"}
-        description={"These are the card variations"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Card"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap"}>

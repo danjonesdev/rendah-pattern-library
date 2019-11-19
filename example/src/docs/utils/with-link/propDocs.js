@@ -3,8 +3,7 @@ export default [
     name: "type",
     default: "",
     type: "enum",
-    description:
-      "<code>internal</code>, <code>external</code>, <code>none</code>"
+    description: "<code>internal</code>, <code>external</code>"
   },
   {
     name: "url",
@@ -16,7 +15,7 @@ export default [
     name: "target",
     default: "",
     type: "enum",
-    description: "<code>_self</code>, <code>_blank</code>"
+    description: "<code>_top</code>, <code>_blank</code>"
   },
   {
     name: "routerLink",

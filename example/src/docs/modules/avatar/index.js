@@ -47,11 +47,7 @@ export default function AvatarPreview({ ...props }) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Avatar"}
-        description={"These are the Hero variations"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Avatar"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  mb4"}>

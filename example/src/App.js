@@ -17,6 +17,7 @@ import LabelPreview from "./docs/elements/label";
 
 // utils
 import PageThemeParallax from "./docs/utils/page-theme-parallax";
+import WithLink from "./docs/utils/with-link";
 
 export default function App() {
   return (
@@ -68,6 +69,9 @@ export default function App() {
               <li className="mb1">
                 <Link to="/page-theme-parallax">PageThemeParallax</Link>
               </li>
+              <li className="mb1">
+                <Link to="/with-link">WithLink</Link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -89,6 +93,7 @@ export default function App() {
 
           {/* Utils */}
           <Route path="/page-theme-parallax" component={PageThemeParallax} />
+          <Route path="/with-link" component={WithLink} />
         </main>
       </div>
     </Router>

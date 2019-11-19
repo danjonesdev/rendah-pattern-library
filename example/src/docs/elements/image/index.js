@@ -7,11 +7,7 @@ import propDocs from "./propDocs";
 export default function ImagePreview(props) {
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Image"}
-        description={"Single images"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Image"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  mb4"}>

@@ -7,11 +7,7 @@ import propDocs from "./propDocs";
 export default function IconPreview({ ...props }) {
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Icon"}
-        description={"These are the icons"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Icon"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <Heading

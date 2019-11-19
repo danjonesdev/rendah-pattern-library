@@ -15,11 +15,7 @@ export default function HeadingPreview(props) {
 
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Heading"}
-        description={"Heading only really varies in it's size"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Heading"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra  relative">
         <div className={"flex  flex-wrap  mb4"}>

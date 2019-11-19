@@ -7,11 +7,7 @@ import propDocs from "./propDocs";
 export default function ButtonPreview({ ...props }) {
   return (
     <React.Fragment>
-      <PreviewWrapper
-        title={"Button"}
-        description={"These are the button variations"}
-        propDocs={propDocs}
-      />
+      <PreviewWrapper title={"Button"} description={""} propDocs={propDocs} />
 
       <div className="container  mla  mra">
         <div className={"flex  flex-wrap  justify-center"}>
