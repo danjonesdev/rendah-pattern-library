@@ -15,8 +15,14 @@ export default function ProgressiveImage(props) {
         style={{ height: `${height}px` }}
         alt={alt}
         src={src}
-        onLoad={() => {
-          setHighResImageLoaded(true);
+        ref={input => {
+          // onLoad replacement for SSR
+          if (!input) return;
+          const img = input;
+          const action = () => setHighResImageLoaded(true);
+
+          img.onload = action;
+          if (img.complete) action();
         }}
       />
       <img
