@@ -23,16 +23,16 @@ export default function Copy(props) {
   let lineHeight;
   switch (size) {
     case "small":
-      lineHeight = 16;
-      break;
-    case "medium":
       lineHeight = 18;
       break;
+    case "medium":
+      lineHeight = 22;
+      break;
     case "large":
-      lineHeight = 20;
+      lineHeight = 24;
       break;
     case "x-large":
-      lineHeight = 22;
+      lineHeight = 26;
       break;
     default:
       lineHeight = 24;

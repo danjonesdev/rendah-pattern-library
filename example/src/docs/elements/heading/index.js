@@ -74,6 +74,70 @@ export default function HeadingPreview(props) {
             withLinkProps={null}
           />
         </div>
+        <div className={"flex  flex-wrap  mb4"}>
+          <Heading
+            /* Options */
+            htmlEntity={"h1"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+            color={"black"}
+            size={"x-large"}
+            truncate={2}
+            reveal={false}
+            onClick={null}
+            /* Children */
+            withLinkProps={null}
+          />
+        </div>
+        <div className={"flex  flex-wrap  mb4"}>
+          <Heading
+            /* Options */
+            htmlEntity={"h2"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+            color={"black"}
+            size={"large"}
+            truncate={2}
+            reveal={false}
+            onClick={null}
+            /* Children */
+            withLinkProps={null}
+          />
+        </div>
+        <div className={"flex  flex-wrap  mb4"}>
+          <Heading
+            /* Options */
+            htmlEntity={"h3"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+            color={"black"}
+            size={"medium"}
+            truncate={2}
+            reveal={false}
+            onClick={null}
+            /* Children */
+            withLinkProps={null}
+          />
+        </div>
+        <div className={"flex  flex-wrap  mb4"}>
+          <Heading
+            /* Options */
+            htmlEntity={"h4"}
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+            color={"black"}
+            size={"small"}
+            truncate={2}
+            reveal={false}
+            onClick={null}
+            /* Children */
+            withLinkProps={null}
+          />
+        </div>
       </div>
     </React.Fragment>
   );

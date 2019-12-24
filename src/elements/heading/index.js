@@ -26,22 +26,27 @@ export default function Heading(props) {
   const hasReveal = reveal ? "heading--reveal" : "";
   const ElementTypeInner = hasTruncate ? TruncateMarkup : React.Fragment;
 
+  const heightSmall = 22;
+  const heightMedium = 24;
+  const heightLarge = 26;
+  const heightXLarge = 38;
+
   let lineHeight;
   switch (size) {
     case "small":
-      lineHeight = hasReveal ? 20 + 10 : 20;
+      lineHeight = hasReveal ? heightSmall + 4 : heightSmall;
       break;
     case "medium":
-      lineHeight = hasReveal ? 24 + 15 : 24;
+      lineHeight = hasReveal ? heightMedium + 4 : heightMedium;
       break;
     case "large":
-      lineHeight = hasReveal ? 38 + 15 : 38;
+      lineHeight = hasReveal ? heightLarge + 4 : heightLarge;
       break;
     case "x-large":
-      lineHeight = hasReveal ? 32 + 24 : 32;
+      lineHeight = hasReveal ? heightXLarge + 4 : heightXLarge;
       break;
     default:
-      lineHeight = hasReveal ? 20 + 10 : 20;
+      lineHeight = hasReveal ? heightSmall + 4 : heightSmall;
   }
 
   const styles = {
