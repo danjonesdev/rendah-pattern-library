@@ -23,7 +23,7 @@ export default function WithLink(props) {
             <div className="link" onClick={handleRouterRedirect} {...props}>
               {props.children}
             </div>
-            {redirect()}
+            {handleRouterRedirect()}
           </React.Fragment>
         );
       }
