@@ -1,27 +1,30 @@
-import React from "react";
-// const Link = 'Link'
+import React, { useState } from "react";
 
 /**
  * Determines what link type children should be wrapped in.
  */
 
 export default function WithLink(props) {
+  const [canRedirect, setCanRedirect] = useState(false);
   const { withLinkProps } = props;
   if (!withLinkProps) return <div {...props}>{props.children}</div>;
-  const RouterLink = withLinkProps.routerLink;
+  const RouterRedirect = withLinkProps.routerLink;
+
+  const handleRouterRedirect = () => {
+    if (canRedirect) return <RouterRedirect push to={withLinkProps.url} />;
+    return false;
+  };
 
   switch (withLinkProps.type) {
     case "internal":
-      if (RouterLink) {
+      if (RouterRedirect) {
         return (
-          <RouterLink
-            className="link"
-            target={withLinkProps.target || "_top"}
-            to={withLinkProps.url}
-            {...props}
-          >
-            {props.children}
-          </RouterLink>
+          <React.Fragment>
+            <div className="link" onClick={handleRouterRedirect} {...props}>
+              {props.children}
+            </div>
+            {redirect()}
+          </React.Fragment>
         );
       }
       break;
@@ -29,7 +32,7 @@ export default function WithLink(props) {
       return (
         <a
           className="link"
-          target={withLinkProps.target || "_top"}
+          target={withLinkProps.target || "_self"}
           href={withLinkProps.url}
           {...props}
         >
