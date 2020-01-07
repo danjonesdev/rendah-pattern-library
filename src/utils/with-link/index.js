@@ -10,6 +10,11 @@ export default function WithLink(props) {
   if (!withLinkProps) return <div {...props}>{props.children}</div>;
   const RouterRedirect = withLinkProps.routerLink;
 
+  const setCanRedirect = e => {
+    e.preventDefault();
+    setCanRedirect(true);
+  };
+
   const handleRouterRedirect = () => {
     if (canRedirect) return <RouterRedirect push to={withLinkProps.url} />;
     return false;
@@ -20,9 +25,14 @@ export default function WithLink(props) {
       if (RouterRedirect) {
         return (
           <React.Fragment>
-            <div className="link" onClick={handleRouterRedirect} {...props}>
+            <a
+              className="link"
+              href={withLinkProps.url}
+              onClick={setCanRedirect}
+              {...props}
+            >
               {props.children}
-            </div>
+            </a>
             {handleRouterRedirect()}
           </React.Fragment>
         );
