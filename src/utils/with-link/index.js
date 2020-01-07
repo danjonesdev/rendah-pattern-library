@@ -10,7 +10,7 @@ export default function WithLink(props) {
   if (!withLinkProps) return <div {...props}>{props.children}</div>;
   const RouterRedirect = withLinkProps.routerLink;
 
-  const setCanRedirect = e => {
+  const handleClick = e => {
     e.preventDefault();
     setCanRedirect(true);
   };
@@ -28,7 +28,7 @@ export default function WithLink(props) {
             <a
               className="link"
               href={withLinkProps.url}
-              onClick={setCanRedirect}
+              onClick={handleClick}
               {...props}
             >
               {props.children}
