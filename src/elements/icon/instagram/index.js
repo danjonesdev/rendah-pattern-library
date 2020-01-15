@@ -1,11 +1,12 @@
 import React from "react";
 export default function Instagram(props) {
-  const { color } = props;
+  const { color, size } = props;
 
   return (
     <svg
+      style={{ width: `${size}px` }}
       xmlns="http://www.w3.org/2000/svg"
-      fill={color}
+      className={`fill-${color}`}
       width="24"
       height="24"
       viewBox="0 0 24 24"

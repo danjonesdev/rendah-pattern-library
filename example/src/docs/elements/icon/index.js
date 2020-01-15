@@ -21,10 +21,10 @@ export default function IconPreview({ ...props }) {
 
         <div className={"flex  flex-wrap  pt4"}>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"arrow-right"} color={"#000000"} />
+            <Icon icon={"arrow-right"} color={"black"} size={24} />
           </div>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"mail"} color={"#000000"} />
+            <Icon icon={"mail"} color={"black"} size={24} />
           </div>
         </div>
 
@@ -39,22 +39,22 @@ export default function IconPreview({ ...props }) {
 
         <div className={"flex  flex-wrap  pt4"}>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"facebook"} color={"#000000"} />
+            <Icon icon={"facebook"} color={"black"} size={24} />
           </div>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"twitter"} color={"#000000"} />
+            <Icon icon={"twitter"} color={"black"} size={24} />
           </div>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"instagram"} color={"#000000"} />
+            <Icon icon={"instagram"} color={"black"} size={24} />
           </div>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"soundcloud"} color={"#000000"} />
+            <Icon icon={"soundcloud"} color={"black"} size={24} />
           </div>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"discord"} color={"#000000"} />
+            <Icon icon={"discord"} color={"black"} size={24} />
           </div>
           <div className={"col-24  col-4-md  col-2-lg  flex  mb4"}>
-            <Icon icon={"youtube"} color={"#000000"} />
+            <Icon icon={"youtube"} color={"black"} size={24} />
           </div>
         </div>
       </div>
