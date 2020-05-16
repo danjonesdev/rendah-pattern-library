@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save rendah-pattern-library
+npm install --save github:danjonesdev/rendah-pattern-library
 ```
 
 ## Usage
