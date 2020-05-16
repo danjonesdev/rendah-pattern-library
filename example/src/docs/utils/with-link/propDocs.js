@@ -3,7 +3,8 @@ export default [
     name: "type",
     default: "",
     type: "enum",
-    description: "<code>internal</code>, <code>external</code>"
+    description:
+      "<code>internal</code>, <code>external</code>, <code>form</code>"
   },
   {
     name: "url",

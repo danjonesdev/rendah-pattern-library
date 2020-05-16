@@ -50,6 +50,13 @@ export default function WithLink(props) {
         </a>
       );
       break;
+    case "form":
+      return (
+        <button type="submit" {...props}>
+          {props.children}
+        </button>
+      );
+      break;
     case "none":
       return <div {...props}>{props.children}</div>;
       break;
